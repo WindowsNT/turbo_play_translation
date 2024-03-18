@@ -1,0 +1,854 @@
+// 
+#include "windows.h"
+#include "commctrl.h"
+
+MENU_BRUSHEDITOR MENU
+{
+	POPUP "Solid Brush"
+	{
+		MENUITEM "Color...\tC",101
+	}
+	POPUP "Linear Brush"
+	{
+		MENUITEM "Start Point...",201
+		MENUITEM "End Point...",202
+		POPUP "Gamma mode"
+		{
+			MENUITEM "2.2",211
+			MENUITEM "1.0",212
+		}
+		POPUP "Extend mode"
+		{
+			MENUITEM "Clamp",221
+			MENUITEM "Wrap",222
+			MENUITEM "Mirror",223
+		}
+		MENUITEM "Rotation...",231
+		MENUITEM "Opacity...",232
+		MENUITEM "Translation",233
+		POPUP "Stops"
+		{
+			MENUITEM "Add stop...",241
+			MENUITEM SEPARATOR
+			POPUP "Edit stop"
+			{
+				MENUITEM SEPARATOR
+			}
+			POPUP "Delete stop"
+			{
+				MENUITEM SEPARATOR
+			}
+
+		}
+	}
+	POPUP "Radial Brush"
+	{
+		MENUITEM "Center Point...",301
+		MENUITEM "Gradient Offset...",302
+		MENUITEM "X radius...",303
+		MENUITEM "Y radius...",304
+		MENUITEM "Rotation...",331
+		MENUITEM "Opacity...",332
+		MENUITEM "Translation",333
+			POPUP "Stops"
+		{
+			MENUITEM "Add stop...",341
+			MENUITEM SEPARATOR
+			POPUP "Edit stop"
+			{
+				MENUITEM SEPARATOR
+			}
+			POPUP "Delete stop"
+			{
+				MENUITEM SEPARATOR
+			}
+		}
+	}
+
+	POPUP "Bitmap Brush"
+	{
+		MENUITEM "Image...",401
+		MENUITEM "Rotation...",431
+		MENUITEM "Opacity...",432
+		MENUITEM "Translation",433
+		POPUP "X Extend mode"
+		{
+			MENUITEM "Clamp",421
+			MENUITEM "Wrap",422
+			MENUITEM "Mirror",423
+		}
+		POPUP "Y Extend mode"
+		{
+			MENUITEM "Clamp",424
+			MENUITEM "Wrap",425
+			MENUITEM "Mirror",426
+		}
+	}
+}
+
+MENU_PRIMANIM MENU
+{
+	POPUP "1"
+	{
+		POPUP "Tool"
+		{
+				MENUITEM "Arrow",101
+				MENUITEM SEPARATOR
+				MENUITEM "Line draw",102
+				MENUITEM "Rectangle draw",103
+				MENUITEM "Rounded Rectangle draw",104
+				MENUITEM "Ellipse draw",105
+					MENUITEM "Quadratic bezier draw",106
+					MENUITEM "Qubic bezier draw",107
+					MENUITEM "Arc",108
+					MENUITEM "Ink",109
+				MENUITEM SEPARATOR
+				MENUITEM "3-point shape (Triangle)",110
+				MENUITEM "4-point shape ",111
+				MENUITEM "5-point shape ",112
+				MENUITEM "6-point shape ",113
+				MENUITEM "8-point shape ",114
+				MENUITEM "Arrow 1",116
+				MENUITEM "Arrow 2",117
+				MENUITEM SEPARATOR
+
+					MENUITEM "Complex shape",115
+					MENUITEM "Text",141
+					MENUITEM "SVG",142
+		}
+		MENUITEM SEPARATOR
+		POPUP "Show"
+		{
+			MENUITEM "Grid\tD",821
+			MENUITEM "Bounding Rectangles\tB",823
+			MENUITEM "Marker points (Numbers,Dots,None)\tN",822
+		}
+
+		MENUITEM SEPARATOR
+		MENUITEM "Maximum number of frames...",9
+		MENUITEM "Next frame\t>",1
+		MENUITEM "Previous frame\t<",2
+		MENUITEM "Go to frame...\tG",3
+		MENUITEM SEPARATOR
+		MENUITEM "Paste\tCtrl+V",5
+		MENUITEM SEPARATOR
+		MENUITEM "Play animation...Space",4
+	}
+POPUP "2"
+{
+				MENUITEM "Start frame...",455
+				MENUITEM "Number of frames...",405
+				MENUITEM "Keep after last frame",406
+				MENUITEM SEPARATOR
+				MENUITEM "Stroke width",402
+				MENUITEM "Stroke single color",403
+				MENUITEM "Stroke complex color",433
+				MENUITEM "Fill single color",404
+				MENUITEM "Fill complex color",434
+				MENUITEM SEPARATOR
+					//				MENUITEM "As mesh",488
+						//			MENUITEM SEPARATOR
+									MENUITEM "Geometry image...",407
+									MENUITEM SEPARATOR
+									MENUITEM "Hidden",456
+									MENUITEM "Locked",457
+									MENUITEM "Rotation...",458
+									MENUITEM SEPARATOR
+									MENUITEM "Bring to front",471
+									MENUITEM "Send to back",472
+									MENUITEM SEPARATOR
+									MENUITEM "Quick scale up\tS",415
+									MENUITEM "Quick scale down\tShift+S",416
+									MENUITEM "Scale...",411
+									MENUITEM SEPARATOR
+									MENUITEM "Quick rotate points right\tR",413
+									MENUITEM "Quick rotate points left\tShift+R",414
+									MENUITEM "Quick rotate points...",412
+									MENUITEM SEPARATOR
+										MENUITEM "Combine with...",419
+									MENUITEM SEPARATOR
+									MENUITEM "Copy\tCtrl+C",408
+									MENUITEM SEPARATOR
+									MENUITEM "Effect manager",410
+									MENUITEM SEPARATOR
+								MENUITEM "Delete",401
+					}
+					POPUP "3"
+					{
+
+								MENUITEM "Delete this animation",501
+					}
+					POPUP "4"
+					{
+
+								MENUITEM "Edit point coordinates...",604
+								POPUP "Extra point parameters"
+								{
+										MENUITEM "Ink radius...\tWheel",611
+											MENUITEM SEPARATOR
+										MENUITEM "Rounded Rect radius...\tWheel",611
+											MENUITEM SEPARATOR
+										MENUITEM "Arc size...",615
+										MENUITEM "Arc angle...\tWheel",612
+										MENUITEM "Arc sweep direction toggle",613
+										MENUITEM "Arc big mode toggle",614
+								}
+									MENUITEM SEPARATOR
+								MENUITEM "Edit animation on this point",601
+								MENUITEM "Duplicate animation from this point to other point",603
+								MENUITEM "Delete animation on this point",602
+					}
+					POPUP "5"
+					{
+						MENUITEM "Next segment: line",701
+						MENUITEM "Next segment: quadratic bezier",702
+						MENUITEM "Next segment: cubic bezier",703
+							MENUITEM "Next segment: arc", 706
+							MENUITEM "Next segment: ink drawing",704
+									MENUITEM SEPARATOR
+						MENUITEM "Next join",705
+
+									MENUITEM SEPARATOR
+							MENUITEM "End drawing, leave shape opened",708
+							MENUITEM "End drawing, close shape ",709
+					}
+					POPUP "6"
+					{
+								MENUITEM "Edit point coordinates...",998
+									MENUITEM SEPARATOR
+									POPUP "Transition Type"
+								{
+									MENUITEM SEPARATOR
+								}
+									MENUITEM SEPARATOR
+									MENUITEM "Delete point",999
+					}
+
+					POPUP "7"
+					{
+							MENUITEM "Combine with...", 419
+							MENUITEM "Delete", 401
+					}
+
+}
+
+
+
+
+MENU_DMXMIXER MENU
+{
+	POPUP "DMX Mixer"
+	{
+		MENUITEM "DMX Setup...",51
+		MENUITEM "Set universe...",52
+		MENUITEM SEPARATOR
+		MENUITEM "Destroy DMX mixer",199
+	}
+	POPUP "Fixture"
+	{
+		MENUITEM "Add new",101
+		MENUITEM "Import from library...",102
+		MENUITEM "Import from file...",103
+	}
+	POPUP "Channel"
+	{
+		MENUITEM "Add new",201,GRAYED
+		MENUITEM SEPARATOR
+			MENUITEM "1 row",201
+			MENUITEM "2 rows",202
+			MENUITEM "3 rows",203
+			MENUITEM "4 rows",204
+			MENUITEM SEPARATOR
+			MENUITEM "100 pixel column",211
+			MENUITEM "150 pixel column",212
+			MENUITEM "200 pixel column",213
+	}
+	POPUP "Sync with tracks"
+	{
+		MENUITEM "Update from tracks",301
+		MENUITEM "Update tracks",302
+	}
+}
+MENU_SWINGING MENU
+{
+	MENUITEM "Flat",2000
+	POPUP "2-beats"
+	{
+		MENUITEM "4-8",2001
+		MENUITEM "4-12",2002
+		MENUITEM "4-16",2003
+		MENUITEM "8-4",2011
+		MENUITEM "12-4",2012
+		MENUITEM "16-4",2013
+		MENUITEM "4-6",2021
+		MENUITEM "6-4",2022
+		}
+	POPUP "3-beats"
+	{
+		MENUITEM "4-8-4",3001
+		MENUITEM "4-12-4",3002
+		MENUITEM "4-16-4",3003
+	}
+
+}
+
+MENU_EMPTYHIT1 MENU
+{
+	POPUP "0"
+{
+	POPUP "Add"
+		{
+			MENUITEM "Track\tCtrl+T",11511
+			MENUITEM "Marker",101
+			POPUP "Rythm"
+			{
+				MENUITEM "Beat change",10516
+				MENUITEM "Tempo change",10517
+			}
+				MENUITEM SEPARATOR
+				MENUITEM "Add many tracks...",11772
+		}
+} }
+
+MENU_EMPTYHIT2 MENU
+{
+	POPUP "0"
+{
+				MENUITEM "Add Top Layer\tCtrl+L",11511
+				MENUITEM "Add Bottom Layer\tCtrl+Shift+L",11535
+					MENUITEM SEPARATOR
+				MENUITEM "Add Marker",101
+				MENUITEM "Part filtering...",11775
+					MENUITEM SEPARATOR
+				MENUITEM "Add many layers...",11772
+				MENUITEM "Add a video wall...",11773
+} }
+
+
+
+MENU_RIGHTPREVIEW MENU
+				{
+					POPUP "0"
+					{
+					POPUP "Preview position"
+					{
+						MENUITEM "Top",401
+						MENUITEM "Right",402
+						MENUITEM "Left",409
+						MENUITEM "External",403
+					}
+					POPUP "Video background color"
+					{
+						MENUITEM "Set...",411
+						MENUITEM "Reset",412
+					}
+					MENUITEM SEPARATOR
+					MENUITEM "Resolution",421
+					MENUITEM SEPARATOR
+					MENUITEM "Transform preview",101
+					MENUITEM "Reset transform",102
+					MENUITEM SEPARATOR
+					MENUITEM "More scene options...\tAlt+F11",422
+					}
+				}
+
+
+					MENU_RDP MENU
+				{
+					POPUP "View"
+						{
+							MENUITEM "Scaled",101
+							MENUITEM "Unscaled",102
+						}
+				/*	POPUP "Control"
+						{
+							MENUITEM "None",105
+							MENUITEM "View",103
+							MENUITEM "Interact",104
+						}
+					*/
+				}
+
+					MENU_BGC MENU
+				{
+					POPUP "0"
+				{
+					MENUITEM "None",101
+					MENUITEM "Set color...",102
+				} }
+
+					MENU_GUIDOMEASURE MENU
+					{
+					POPUP "T"
+						{
+						MENUITEM "Copy measure\tCtrl+C",1801
+						MENUITEM "Paste measure\tCtrl+V",1802
+						}
+
+					}
+
+						MENU_GUIDO MENU
+					{
+						POPUP "T"
+					{
+						POPUP "Staff"
+						{
+							MENUITEM "Add\tShift+A,S",1101
+							POPUP "Select"
+							{
+							MENUITEM SEPARATOR
+							}
+							POPUP "Delete"
+							{
+							MENUITEM SEPARATOR
+							}
+						}
+						POPUP "Voice"
+						{
+							MENUITEM "Add\tShift+A,V",1201
+							POPUP "Select"
+							{
+							MENUITEM SEPARATOR
+							}
+							POPUP "Delete"
+							{
+							MENUITEM SEPARATOR
+							}
+						}
+						POPUP "Next Note"
+						{
+							MENUITEM "Full note\tKeypad 1",2001
+							MENUITEM "Half note\tKeypad 2",2002
+							MENUITEM "Quarter note\tKeypad 4",2004
+							MENUITEM "Eighth note\tKeypad 8",2008
+							MENUITEM "16th note\tKeypad 6",2016
+							MENUITEM "32th note",2032
+							MENUITEM "64th note",2064
+							MENUITEM SEPARATOR
+							MENUITEM "Tuple (8ths)\tKeypad 3",2012
+							MENUITEM "Tuple (16ths)",2024
+							MENUITEM "Tuple (4ths)",2006
+							MENUITEM "Tuple (2nds)",2003
+
+							MENUITEM SEPARATOR
+								///		MENUITEM "Active dot (.)",3001
+
+									}
+									POPUP "Add Clef"
+									{
+										MENUITEM "G",3401
+										MENUITEM "F",3402
+										MENUITEM "C Soprano",3403
+										MENUITEM "C Alto",3404
+										MENUITEM "C Tenor",3405
+									}
+									POPUP "Add Key"
+									{
+										POPUP "Major"
+										{
+											MENUITEM "C-",3503
+											MENUITEM "G-",3504
+											MENUITEM "D-",3505
+											MENUITEM "A-",3506
+											MENUITEM "E-",3507
+											MENUITEM "B-",3508
+											MENUITEM "F",3509
+										MENUITEM SEPARATOR
+											MENUITEM "C",3510
+										MENUITEM SEPARATOR
+											MENUITEM "G",3511
+											MENUITEM "D",3512
+											MENUITEM "A",3513
+											MENUITEM "E",3514
+											MENUITEM "B",3515
+											MENUITEM "F#",3516
+											MENUITEM "C#",3517
+										}
+										POPUP "Minor"
+										{
+											MENUITEM "A-",3553
+											MENUITEM "E-",3554
+											MENUITEM "B-",3555
+											MENUITEM "F",3556
+											MENUITEM "C",3557
+											MENUITEM "G",3558
+											MENUITEM "D",3559
+										MENUITEM SEPARATOR
+											MENUITEM "A",3560
+										MENUITEM SEPARATOR
+											MENUITEM "E",3561
+											MENUITEM "B",3562
+											MENUITEM "F#",3563
+											MENUITEM "C#",3564
+											MENUITEM "G#",3565
+											MENUITEM "D#",3566
+											MENUITEM "A#",3567
+										}
+									}
+									POPUP "Note Popup"
+									{
+
+										POPUP "Expression"
+										{
+											MENUITEM "Clear",800
+											MENUITEM SEPARATOR
+												MENUITEM "ppp\tCtrl+P",802
+												MENUITEM "pp\tCtrl+P", 803
+												MENUITEM "p\tCtrl+P", 804
+												MENUITEM "mp", 809
+												MENUITEM SEPARATOR
+												MENUITEM "mf", 810
+												MENUITEM "f\tCtrl+F", 805
+												MENUITEM "ff\tCtrl+F", 806
+												MENUITEM "fff\tCtrl+F", 807
+												MENUITEM SEPARATOR
+												MENUITEM "Begin Cresc",811
+												MENUITEM "End Cresc", 812
+												MENUITEM "Begin Dim", 813
+												MENUITEM "End Dim", 814
+												MENUITEM SEPARATOR
+												MENUITEM "Toggle Marcato\t'", 931
+												MENUITEM "Toggle Sf\tCtrl+'", 932
+												MENUITEM "Toggle Staccato\t,", 933
+										}
+										POPUP "VST 3.5+ Expression"
+										{
+											MENUITEM "Pressure", 431
+											MENUITEM "Note Exression Value", 432
+											MENUITEM "Note Exression Text", 433
+											MENUITEM "Chord", 434
+											MENUITEM "Scale", 435
+										}
+										POPUP "Move"
+										{
+											MENUITEM "Diatonic up\tArrow up", 921
+											MENUITEM "Chromatic up\tShift+Arrow up", 922
+											MENUITEM "Diatonic down\tArrow down", 923
+											MENUITEM "Chromatic down\tShift+Arrow down", 924
+										}
+										POPUP "Begin"
+										{
+											MENUITEM "Slur", 951
+												MENUITEM "Section", 953
+												MENUITEM "Cresc", 811
+												MENUITEM "Dim", 813
+										}
+										POPUP "End"
+										{
+											MENUITEM "Slur", 952
+												MENUITEM "Section", 954
+												MENUITEM "Cresc", 812
+												MENUITEM "Dim", 814
+										}
+										MENUITEM "Toggle Courtesy Accidental\tP", 933
+											MENUITEM "Swap Accidental\t\\", 934
+											MENUITEM SEPARATOR
+											MENUITEM "Auto-Harmony constraints...\tC", 935
+											MENUITEM "Clear constraints...\tShift+C", 936
+											MENUITEM SEPARATOR
+											MENUITEM "Delete",901
+									}
+									}
+					}
+
+
+
+
+
+
+
+						MENU_ORCHESTRA MENU
+					{
+						MENUITEM "Add",101
+					}
+
+						MENU_MIXER MENU
+					{
+						POPUP "Add"
+						{
+							MENUITEM "Group Mixer",9101
+							MENUITEM "Auxiliary Mixer",9102
+							MENUITEM "Stream Server",9103
+								//		MENUITEM "Secondary ASIO driver",9104
+									}
+									MENUITEM "Auto resize",9999
+					}
+
+						MENU_MIXER3 MENU
+									{
+										POPUP "Add"
+										{
+											MENUITEM "Group Mixer",9101
+											MENUITEM "Auxiliary Mixer",9102
+											MENUITEM "Stream Server",9103
+													}
+													MENUITEM "Reload mixer",9999
+									}
+
+
+										MENU_BLEND MENU
+													{
+														POPUP "0"
+													{
+
+														MENUITEM "Normal",0
+														MENUITEM SEPARATOR
+														MENUITEM "Multiply",1
+														MENUITEM "Screen",2
+														MENUITEM "Darken",3
+														MENUITEM "Lighten",4
+														MENUITEM "Dissolve",5
+														MENUITEM "Color burn",6
+														MENUITEM "Linear burn",7
+														MENUITEM "Darker color",8
+														MENUITEM "Lighter color",9
+														MENUITEM "Color dodge",10
+														MENUITEM "Linear dodge",11
+														MENUITEM "Overlay",12
+														MENUITEM "Soft light",13
+														MENUITEM "Hard light",14
+														MENUITEM "Vivid light",15
+														MENUITEM "Linear light",16
+														MENUITEM "Pin light",17
+														MENUITEM "Hard mix",18
+														MENUITEM "Difference",19
+														MENUITEM "Exclusion",20
+														MENUITEM "Hue",21
+														MENUITEM "Saturation",22
+														MENUITEM "Color",23
+														MENUITEM "Luminosity",24
+														MENUITEM "Substract",25
+														MENUITEM "Division",26
+															/*	MENUITEM SEPARATOR
+																MENUITEM "Source Over",27
+																MENUITEM "Destination Over",28
+																MENUITEM "Source In",29
+																MENUITEM "Destination In",30
+																MENUITEM "Source Out",31
+																MENUITEM "Destination Out",32
+																MENUITEM "Source ATop",33
+																MENUITEM "Destination ATop",34
+																MENUITEM "XOR",35
+																MENUITEM "Plus",36
+																MENUITEM "Source Copy",37
+																MENUITEM "Bounded Source Copy",38
+																MENUITEM "Mask Invert",39
+																*/
+																MENUITEM SEPARATOR
+																MENUITEM "Next blend mode\tAlt+>",991
+																MENUITEM "Previous blend mode\tAlt+<",992
+															}
+													}
+
+														MENU_VST MENU
+													{
+														MENUITEM "Load external file...",100
+														MENUITEM "Scan...",103
+														POPUP "Filter"
+														{
+															MENUITEM "x64 plugins",201
+															MENUITEM "x86 plugins",202
+															MENUITEM "Effects",203
+															MENUITEM "Instruments",204
+															MENUITEM "VST 2.x plugins",205
+															MENUITEM "VST 3.x plugins",206
+															MENUITEM "Sound Fonts",207
+															MENUITEM "Milk Drops",208
+															MENUITEM "3D Objects",209
+
+														}
+													}
+
+
+														MENU_CONTROLLERMAP MENUEX
+													{
+														/* POPUP "File"
+														 {
+														  MENUITEM "Save controller map to file...", 205
+														  MENUITEM "Load controller map from file...", 204
+														 }
+														 POPUP "Presets"
+														 {
+														  MENUITEM "New Preset for project...", 301
+														  MENUITEM "Load Preset from project...", 302
+														  MENUITEM "Delete Preset", 303
+														 }
+														 POPUP "Map"
+														 {
+														  MENUITEM "All Selected Static", 202
+														  MENUITEM "All Selected Learning", 203
+														  MENUITEM "All Selected Clear", 207
+														  MENUITEM SEPARATOR
+														  MENUITEM "Load default map", 201
+														  MENUITEM SEPARATOR
+														  MENUITEM "Show/Hide unused maps", 209
+														 }
+														 */
+														 POPUP "Associate MIDI"
+														 {
+														  MENUITEM "Open MIDI Mapping Explorer", 800
+														 }
+													}
+
+
+														MENU_KEYBOARDMAP MENUEX
+													{
+													  MENUITEM "Add shortcut...", 800
+
+													}
+
+														MENU_BROWSER MENU
+													{
+														MENUITEM "Add folder...",101
+													}
+
+														MENU_SCRIPTS MENU
+													{
+														MENUITEM "New",101
+														MENUITEM "Save",102
+														//	MENUITEM "Run",103
+															MENUITEM "Delete",104
+													}
+
+														MENU_HLSL MENU
+													{
+														POPUP "File"
+														{
+															MENUITEM "New ...",101
+															MENUITEM "Import HLSL...",102
+																//		MENUITEM "Import CSO...",103
+																	}
+																	POPUP "Compile with"
+																	{
+																		MENUITEM "Internal",201
+																		MENUITEM "FXC",202
+																	}
+																	MENUITEM "Compile now",999
+													}
+
+
+
+														MENU_P3 MENU
+																	{
+																		POPUP "1"
+																		{
+																			POPUP "Add Priminitive"
+																			{
+																				MENUITEM "Grid...",23
+																				MENUITEM "Cube...",11
+																				MENUITEM "Box...", 12
+																				MENUITEM "Sphere...",13
+																				MENUITEM "GeoSphere...",14
+																				MENUITEM "Cylinder...",15
+																					/*				MENUITEM "Cone...",16
+																									MENUITEM "Torus...",17
+																									MENUITEM "Tetrahedron...",18
+																									MENUITEM "Octahedron...",19
+																									MENUITEM "Dodecahedron...",20
+																									MENUITEM "Icosahedron...",21
+																					//				MENUITEM "Teapot...",22
+																					*/
+																								}
+																									MENUITEM "Add Object...",1
+																									MENUITEM "Add 3D Text...",2
+																									MENUITEM SEPARATOR
+																										MENUITEM "Select item...",97
+																										MENUITEM SEPARATOR
+																										POPUP "Current Item"
+																										{
+																										MENUITEM SEPARATOR
+
+																										}
+																										MENUITEM SEPARATOR
+																										MENUITEM "Render with effects", 96
+																											MENUITEM "View properties", 98
+																											MENUITEM "View labels", 95
+																										POPUP "3D Mouse action"
+																										{
+
+																										MENUITEM "Translate", 81
+																											MENUITEM "Rotate", 82
+																											MENUITEM "Scale", 83
+																									}
+
+																										MENUITEM SEPARATOR
+																										MENUITEM "View all Objects",99
+																							}
+																	}
+
+
+
+																		MENU_SF MENU
+																	{
+																		POPUP "Preset"
+																		{
+																			MENUITEM "New Preset...",101
+																			MENUITEM "Edit Preset...",102
+																			MENUITEM "Rename Preset...",103
+																			MENUITEM "Delete Preset...",104
+																		}
+																		MENUITEM "Write",801
+																	}
+
+
+
+
+																		MENU_VPL2 MENU
+																		{
+																			POPUP "File"
+																			{
+																				MENUITEM "Open ...",101
+																			}
+																		}
+
+
+																			MENU_SCI_HLSL MENU
+																		{
+																				POPUP "File"
+																				{
+																				MENUITEM "New ...",101
+																				MENUITEM "Open...",102
+																				}
+																				POPUP "View"
+																				{
+																					POPUP "Font"
+																					{
+																						MENUITEM "Consolas",401
+																						MENUITEM "Courier",402
+																						MENUITEM "Cascadia",403
+																						MENUITEM "Fira",404
+																						MENUITEM "Lucida",405
+																						MENUITEM "MS Gothic",406
+																						MENUITEM "NSimSun",407
+																						MENUITEM "Terminal",408
+																					}
+																					MENUITEM "Font size...",302
+																				}
+																				MENUITEM "Test now",1001
+																		}
+
+
+																			MENU_SCI_GLSL MENU
+																				{
+																						POPUP "File"
+																						{
+																						MENUITEM "New ...",101
+																						MENUITEM "Open...",102
+																						}
+																						POPUP "View"
+																						{
+																							POPUP "Font"
+																							{
+																								MENUITEM "Consolas",401
+																								MENUITEM "Courier",402
+																								MENUITEM "Cascadia",403
+																								MENUITEM "Fira",404
+																								MENUITEM "Lucida",405
+																								MENUITEM "MS Gothic",406
+																								MENUITEM "NSimSun",407
+																								MENUITEM "Terminal",408
+																							}
+																							MENUITEM "Font size...",302
+																						}
+																						MENUITEM "Test now",1001
+																				}

@@ -1,0 +1,249 @@
+// 
+#include "windows.h"
+#include "commctrl.h"
+#define IDC_STATIC -1
+
+#include "dialogs_u.rc"
+
+
+
+DIALOG_CONTROLLERMAPEXPLORER DIALOGEX 0, 0, 355, 269
+STYLE DS_3DLOOK | DS_ABSALIGN | DS_CENTER | DS_MODALFRAME | DS_NOFAILCREATE | DS_SETFOREGROUND | DS_SETFONT | WS_CAPTION | WS_VISIBLE | WS_CLIPSIBLINGS | WS_GROUP | WS_POPUP | WS_SYSMENU
+EXSTYLE WS_EX_TOOLWINDOW | WS_EX_APPWINDOW
+CAPTION "MIDI Controller Map Explorer"
+FONT 9, "MS Shell Dlg", 400, 0, 0
+{
+	CONTROL         "", 901, WC_LISTVIEW, WS_BORDER | LVS_SHOWSELALWAYS | LVS_REPORT, 5, 7, 336, 227
+		LTEXT           "Generate midi messages from your MIDI devices, then double click on a message to map.", 101, 5, 239, 336, 9, NOT WS_GROUP | SS_LEFT
+		//		AUTOCHECKBOX    "Click this if the selected controller is positive/negative form.", 201, 5, 252, 280, 11
+}
+
+
+
+
+DIALOG_MIDI2DMX DIALOGEX 0, 0, 355, 269
+STYLE DS_3DLOOK | DS_ABSALIGN | DS_CENTER | DS_MODALFRAME | DS_NOFAILCREATE | DS_SETFOREGROUND | DS_SETFONT | WS_CAPTION | WS_VISIBLE | WS_CLIPSIBLINGS | WS_GROUP | WS_POPUP | WS_SYSMENU
+EXSTYLE WS_EX_TOOLWINDOW | WS_EX_APPWINDOW
+CAPTION "MIDI to DMX Configuration"
+FONT 9, "MS Shell Dlg", 400, 0, 0
+{
+	CONTROL         "", 901, WC_LISTVIEW, WS_BORDER | LVS_SHOWSELALWAYS | LVS_REPORT, 5, 7, 336, 227
+		LTEXT           "Generate midi messages from your MIDI devices, then edit the DMX parameters.", 101, 5, 239, 336, 9, NOT WS_GROUP | SS_LEFT
+		//		AUTOCHECKBOX    "Click this if the selected controller is positive/negative form.", 201, 5, 252, 280, 11
+}
+
+
+
+
+
+DIALOG_NEWPROJECTX DIALOGEX 0, 0, 416, 203
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | DS_CENTER | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "New Project"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+LTEXT           "Name:", IDC_STATIC, 13, 21, 45, 8
+EDITTEXT        101, 78, 19, 262, 14, ES_AUTOHSCROLL
+LTEXT           "Folder:", IDC_STATIC, 13, 40, 23, 8
+EDITTEXT        102, 78, 38, 262, 13, ES_AUTOHSCROLL
+PUSHBUTTON      "Select...", 201, 354, 38, 40, 14
+LTEXT           "Audio Driver:", IDC_STATIC, 13, 61, 44, 8
+LTEXT           "Static", 701, 79, 61, 261, 30
+PUSHBUTTON      "Change...", 202, 354, 61, 40, 14
+GROUPBOX        "Initial workspace:", IDC_STATIC, 79, 97, 118, 57
+CONTROL         "Video", 301, "Button", BS_AUTORADIOBUTTON | WS_GROUP | WS_TABSTOP, 104, 116, 34, 10
+CONTROL         "Audio", 302, "Button", BS_AUTORADIOBUTTON | WS_TABSTOP, 104, 129, 34, 10
+LTEXT           "You can easily switch from audio to video workspace within the project by pressing F12.", IDC_STATIC, 79, 161, 164, 30
+DEFPUSHBUTTON   "OK", IDOK, 279, 179, 50, 14
+PUSHBUTTON      "Cancel", IDCANCEL, 342, 179, 51, 14
+END
+
+
+
+
+/*
+
+DIALOG_NEWPROJECTX DIALOGEX 0, 0, 320, 187
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU | DS_CENTER
+CAPTION "New Project"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+LTEXT           "Name:", IDC_STATIC, 18, 21, 45, 8
+EDITTEXT        101, 77, 19, 173, 14, ES_AUTOHSCROLL
+LTEXT           "Folder:", IDC_STATIC, 19, 40, 23, 8
+EDITTEXT        102, 77, 38, 173, 13, ES_AUTOHSCROLL
+PUSHBUTTON      "Select...", 201, 254, 38, 36, 14
+LTEXT           "Audio Driver:", IDC_STATIC, 20, 61, 44, 8
+PUSHBUTTON      "Change...", 202, 254, 59, 36, 14
+LTEXT           "Static", 701, 79, 61, 164, 30
+DEFPUSHBUTTON   "OK", IDOK, 199, 166, 50, 14
+PUSHBUTTON      "Cancel", IDCANCEL, 262, 166, 51, 14
+END
+*/
+
+
+DIALOG_NEWPROJECT DIALOGEX 0, 0, 345, 167
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | DS_CENTER | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "New Project"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+LTEXT           "Project name:", IDC_STATIC, 17, 21, 57, 8
+EDITTEXT        101, 96, 19, 235, 14, ES_AUTOHSCROLL
+LTEXT           "Folder:", IDC_STATIC, 17, 44, 57, 8
+EDITTEXT        102, 96, 41, 159, 14, ES_AUTOHSCROLL
+PUSHBUTTON      "Select...", 301, 280, 41, 50, 14
+LTEXT           "ASIO Driver:", IDC_STATIC, 17, 71, 48, 8
+COMBOBOX        901, 94, 68, 159, 30, CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
+PUSHBUTTON      "Control Panel", 302, 279, 67, 50, 14
+LTEXT           "Sample rate:", IDC_STATIC, 17, 88, 48, 8
+COMBOBOX        902, 94, 86, 87, 30, CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
+LTEXT           "Buffer size:", IDC_STATIC, 17, 107, 48, 8
+CONTROL         "", 911, "msctls_trackbar32", TBS_BOTH | TBS_NOTICKS | WS_TABSTOP, 94, 103, 160, 15
+EDITTEXT        711, 267, 103, 62, 14, ES_AUTOHSCROLL | ES_READONLY
+DEFPUSHBUTTON   "OK", IDOK, 224, 146, 50, 14
+PUSHBUTTON      "Cancel", IDCANCEL, 278, 146, 50, 14
+END
+
+
+
+
+DIALOG_VSTLOAD DIALOGEX 0, 0, 310, 177
+STYLE DS_SETFONT | DS_CENTER | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "VST Load"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+EDITTEXT        101, 56, 14, 212, 14, ES_AUTOHSCROLL
+LTEXT           "File:", IDC_STATIC, 15, 16, 30, 10
+PUSHBUTTON      "...", 201, 272, 14, 28, 14
+GROUPBOX        "Method", IDC_STATIC, 19, 40, 69, 51, WS_GROUP
+CONTROL         "Local", 301, "Button", BS_AUTORADIOBUTTON, 29, 56, 33, 10
+CONTROL         "External", 302, "Button", BS_AUTORADIOBUTTON, 29, 71, 42, 10
+GROUPBOX        "Protocol", IDC_STATIC, 94, 40, 69, 51, WS_GROUP
+CONTROL         "VST 2.x", 303, "Button", BS_AUTORADIOBUTTON, 104, 56, 42, 10
+CONTROL         "VST 3.x", 304, "Button", BS_AUTORADIOBUTTON, 104, 71, 42, 10
+PUSHBUTTON      "Test", 202, 169, 44, 50, 14, WS_GROUP
+CONTROL         "Enable UAC Virtualization", 311, "Button", BS_AUTOCHECKBOX | WS_TABSTOP, 19, 97, 98, 10
+LTEXT           "VST 3 Class:", 702, 27, 111, 169, 49
+EDITTEXT        102, 76, 109, 50, 14, ES_AUTOHSCROLL | ES_NUMBER
+
+LTEXT           "To test the plugin before loading, press the TEST button.", 701, 17, 131, 169, 49
+DEFPUSHBUTTON   "OK", IDOK, 197, 156, 50, 14
+PUSHBUTTON      "Cancel", IDCANCEL, 250, 156, 50, 14
+END
+
+
+
+
+
+/*
+#include <colordlg.h>
+
+CHOOSECOLOR2 DIALOGEX 2, 0, 318, 185
+STYLE DS_SETFONT | DS_MODALFRAME | DS_3DLOOK | DS_FIXEDSYS | DS_CENTER | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Color"
+FONT 8, "MS Shell Dlg", 0, 0, 0x0
+BEGIN
+LTEXT           "&Basic colors:", -1, 4, 4, 140, 9
+CONTROL         "", COLOR_BOX1, "Static", SS_SIMPLE | WS_GROUP | WS_TABSTOP, 4, 14, 140, 86
+LTEXT           "&Custom colors:", -1, 4, 106, 140, 9
+CONTROL         "", COLOR_CUSTOM1, "Static", SS_SIMPLE | WS_GROUP | WS_TABSTOP, 4, 116, 140, 28
+PUSHBUTTON      "&Define Custom Colors >>", COLOR_MIX, 4, 150, 138, 14, WS_GROUP
+DEFPUSHBUTTON   "OK", IDOK, 4, 166, 44, 14, WS_GROUP
+PUSHBUTTON      "Cancel", IDCANCEL, 52, 166, 44, 14, WS_GROUP
+PUSHBUTTON      "&Help", 1038, 100, 166, 44, 14, WS_GROUP
+CONTROL         "", COLOR_RAINBOW, "Static", SS_SIMPLE | SS_SUNKEN, 152, 4, 118, 98
+CONTROL         "", COLOR_LUMSCROLL, "Static", SS_SIMPLE | SS_SUNKEN, 280, 4, 8, 98
+CONTROL         "", COLOR_CURRENT, "Static", SS_SIMPLE | SS_SUNKEN, 152, 106, 40, 44
+PUSHBUTTON      "&o", COLOR_SOLID, 300, 200, 6, 14, WS_GROUP
+RTEXT           "Color", COLOR_SOLID_LEFT, 152, 151, 20, 9
+LTEXT           "|S&olid", COLOR_SOLID_RIGHT, 172, 151, 20, 9
+RTEXT           "Hu&e:", COLOR_HUEACCEL, 194, 126, 20, 9
+EDITTEXT        COLOR_HUE, 216, 124, 18, 12, WS_GROUP
+RTEXT           "&Sat:", COLOR_SATACCEL, 194, 140, 20, 9
+EDITTEXT        COLOR_SAT, 216, 138, 18, 12, WS_GROUP
+RTEXT           "&Lum:", COLOR_LUMACCEL, 194, 154, 20, 9
+EDITTEXT        COLOR_LUM, 216, 152, 18, 12, WS_GROUP
+RTEXT           "&Alpha:", 992, 238, 113, 24, 9
+EDITTEXT        993, 265, 111, 22, 12, ES_NUMBER | WS_GROUP
+RTEXT           "&Red:", COLOR_REDACCEL, 238, 126, 24, 9
+EDITTEXT        COLOR_RED, 265, 124, 22, 12, ES_NUMBER | WS_GROUP
+RTEXT           "&Green:", COLOR_GREENACCEL, 238, 140, 24, 9
+EDITTEXT        COLOR_GREEN, 265, 138, 22, 12, WS_GROUP
+RTEXT           "Bl&ue:", COLOR_BLUEACCEL, 238, 154, 24, 9
+EDITTEXT        COLOR_BLUE, 265, 152, 22, 12, WS_GROUP
+PUSHBUTTON      "&Add to Custom Colors", COLOR_ADD, 152, 166, 142, 14, WS_GROUP
+CONTROL         "", 991, "msctls_trackbar32", TBS_VERT | TBS_BOTH | TBS_NOTICKS | WS_TABSTOP, 294, 2, 22, 160
+END
+
+*/
+
+DIALOG_CAMERALENSPICKER DIALOGEX 0, 0, 410, 177
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU | DS_CENTER
+CAPTION "Camera and Lens Picker"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+LTEXT           "Manufacturer:", IDC_STATIC, 26, 24, 47, 8
+COMBOBOX        901, 94, 22, 223, 30, CBS_DROPDOWNLIST | CBS_SORT | WS_VSCROLL | WS_TABSTOP
+LTEXT           "Model:", IDC_STATIC, 26, 54, 47, 8
+COMBOBOX        902, 94, 52, 223, 30, CBS_DROPDOWNLIST | CBS_SORT | WS_VSCROLL | WS_TABSTOP
+LTEXT           "Lens:", IDC_STATIC, 26, 84, 47, 8
+COMBOBOX        903, 94, 82, 223, 30, CBS_DROPDOWNLIST | CBS_SORT | WS_VSCROLL | WS_TABSTOP
+LTEXT           "Lens Model:", IDC_STATIC, 26, 114, 47, 8
+COMBOBOX        904, 94, 112, 223, 30, CBS_DROPDOWNLIST | CBS_SORT | WS_VSCROLL | WS_TABSTOP
+DEFPUSHBUTTON   "OK", IDOK, 199, 156, 50, 14
+PUSHBUTTON      "Cancel", IDCANCEL, 253, 156, 50, 14
+END
+
+
+
+
+
+
+DIALOG_MIDICONFIGURATION2 DIALOGEX 0, 0, 271, 260
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | DS_CENTER | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "MIDI Configuration"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+LTEXT           "MIDI Drivers", IDC_STATIC, 16, 15, 48, 9
+CONTROL         "", 901, "SysListView32", LVS_REPORT | LVS_ALIGNLEFT | LVS_NOSORTHEADER | WS_BORDER | WS_TABSTOP, 16, 33, 134, 205
+CONTROL         "Opened", 201, "Button", BS_AUTOCHECKBOX | WS_TABSTOP, 165, 35, 86, 10
+CONTROL         "Use as note entry", 211, "Button", BS_AUTOCHECKBOX | WS_TABSTOP, 165, 72, 71, 10
+CONTROL         "Use as mackie controller", 212, "Button", BS_AUTOCHECKBOX | WS_TABSTOP, 165, 84, 92, 10
+CONTROL         "Use as smartpad", 213, "Button", BS_AUTOCHECKBOX | WS_TABSTOP, 165, 97, 68, 10
+CONTROL         "Use as DJ controller", 214, "Button", BS_AUTOCHECKBOX | WS_TABSTOP, 165, 110, 79, 10
+CONTROL         "Use as DMX controller", 215, "Button", BS_AUTOCHECKBOX | WS_TABSTOP, 165, 123, 90, 10
+CONTROL         "Use for midi output", 216, "Button", BS_AUTOCHECKBOX | WS_TABSTOP, 165, 136, 90, 10
+CONTROL         "Use for effect controller", 217, "Button", BS_AUTOCHECKBOX | WS_TABSTOP, 165, 149, 90, 10
+PUSHBUTTON      "DJ Controller Calibration", 301, 165, 178, 88, 14
+END
+
+
+
+
+
+
+
+/*
+
+DIALOG_ABOUT DIALOGEX 0, 0, 687, 418
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU | DS_NOFAILCREATE | DS_CENTER
+CAPTION "About Turbo Play"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+LTEXT           "Turbo Play", 601, 60, 40, 100, 15
+CONTROL         "", IDC_STATIC, "Static", SS_ETCHEDHORZ, 25, 53, 619, 1
+CONTROL         "", 701, "Static", SS_BITMAP, 6, 283, 245, 155
+CONTROL         "", 702, "Static", SS_BITMAP, 7, 18, 13, 11
+LTEXT           "Copyright:", 602, 60, 68, 76, 15
+LTEXT           "Michael Chourdakis\r\n\r\nUsing licensed code from:\r\nAdobe\r\nGithub\r\nShaderToy\r\nSteinberg\r\nVersillian Orchestra\r\nYamaha", 651, 60, 90, 129, 177
+LTEXT           "GitHub code:", 604, 260, 68, 76, 15
+LTEXT           "7-Zip\r\nOpenCV\r\nDSPFilters\r\nTinySoundFont\r\nOpus\r\nMOD Player\r\nDirectXTK\r\nDemux\r\nColorization\r\nGuido Project\r\nMilkdrop\r\nLensFun\r\nLottie\r\nMatPlot\r\nLUT\r\nOpenDMX\r\nAdobe PSD\r\nOgg/Vorbis\r\nTesseract\r\nPDFium\r\nOpenEXR\r\nIGorski\r\nLipSync\r\nand others.", 653, 260, 90, 129, 267
+LTEXT           "Special Thanks:", 603, 497, 68, 76, 15
+LTEXT           "Alessandro Loiacono\r\nAngel Corrales\r\nDouglas Kehlhem\r\nElsa Hill\r\nEmil Melar\r\nGerman Matías Lucero\r\nSherget Hagat\r\nSylvia Dremetsika\r\nYiannis Malafis\r\nMy sound engineering team", 652, 505, 90, 129, 295
+CONTROL         "<a href=""https://www.turbo-play.com"">www.turbo-play.com</a>", 302, "SysLink", WS_TABSTOP, 200, 404, 107, 11
+CONTROL         "<a href=""https://www.steinberg.net"">www.steinberg.net</a>", 301, "SysLink", WS_TABSTOP, 300, 404, 67, 11
+CONTROL         "<a href=""https://www.shadertoy.com"">www.shadertoy.com</a>", 303, "SysLink", WS_TABSTOP, 400, 404, 107, 11
+CONTROL         "<a href=""https://www.github.com"">www.github.com</a>", 304, "SysLink", WS_TABSTOP, 500, 404, 107, 11
+PUSHBUTTON      "OK", IDCANCEL, 630, 397, 50, 14
+END
+
+*/
