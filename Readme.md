@@ -3,7 +3,7 @@
 
 ## language_en.h
 
-Language_en must be translated entirely
+Language_en must be translated entirely. **This is the most important file to be translated**.
 
 ## menus.rc and mainmenu.rc
 
