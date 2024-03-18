@@ -9,11 +9,11 @@ Language_en must be translated entirely
 
 Menu strings to be translated in double quotes, e.g. "File".
 
-# dialogs.rc
+## dialogs.rc
 
 Lines like that ```PUSHBUTTON      "Change...", 202, 354, 61, 40, 14``` , the "Change..." is to be translated. Not to be translated if it contains ~.
 
-# ribbon.rib
+## ribbon.rib
 
 Only lines starting with `<Command` are to be translated, the "LabelTitle" section, for example
 
