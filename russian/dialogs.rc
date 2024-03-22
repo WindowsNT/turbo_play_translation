@@ -10,11 +10,11 @@
 DIALOG_CONTROLLERMAPEXPLORER DIALOGEX 0, 0, 355, 269
 STYLE DS_3DLOOK | DS_ABSALIGN | DS_CENTER | DS_MODALFRAME | DS_NOFAILCREATE | DS_SETFOREGROUND | DS_SETFONT | WS_CAPTION | WS_VISIBLE | WS_CLIPSIBLINGS | WS_GROUP | WS_POPUP | WS_SYSMENU
 EXSTYLE WS_EX_TOOLWINDOW | WS_EX_APPWINDOW
-CAPTION "Обозреватель назначений MIDI контроллера"
+CAPTION "РћР±РѕР·СЂРµРІР°С‚РµР»СЊ РЅР°Р·РЅР°С‡РµРЅРёР№ MIDI РєРѕРЅС‚СЂРѕР»Р»РµСЂР°"
 FONT 9, "MS Shell Dlg", 400, 0, 0
 {
 	CONTROL         "", 901, WC_LISTVIEW, WS_BORDER | LVS_SHOWSELALWAYS | LVS_REPORT, 5, 7, 336, 227
-		LTEXT           "Синтезируйте midi-сообщения с ваших MIDI-устройств, а затем назначайте их двойным кликом.", 101, 5, 239, 336, 9, NOT WS_GROUP | SS_LEFT
+		LTEXT           "РЎРёРЅС‚РµР·РёСЂСѓР№С‚Рµ midi-СЃРѕРѕР±С‰РµРЅРёСЏ СЃ РІР°С€РёС… MIDI-СѓСЃС‚СЂРѕР№СЃС‚РІ, Р° Р·Р°С‚РµРј РЅР°Р·РЅР°С‡Р°Р№С‚Рµ РёС… РґРІРѕР№РЅС‹Рј РєР»РёРєРѕРј.", 101, 5, 239, 336, 9, NOT WS_GROUP | SS_LEFT
 		//		AUTOCHECKBOX    "Click this if the selected controller is positive/negative form.", 201, 5, 252, 280, 11
 }
 
@@ -24,11 +24,11 @@ FONT 9, "MS Shell Dlg", 400, 0, 0
 DIALOG_MIDI2DMX DIALOGEX 0, 0, 355, 269
 STYLE DS_3DLOOK | DS_ABSALIGN | DS_CENTER | DS_MODALFRAME | DS_NOFAILCREATE | DS_SETFOREGROUND | DS_SETFONT | WS_CAPTION | WS_VISIBLE | WS_CLIPSIBLINGS | WS_GROUP | WS_POPUP | WS_SYSMENU
 EXSTYLE WS_EX_TOOLWINDOW | WS_EX_APPWINDOW
-CAPTION "Настройка Midi в DMX"
+CAPTION "РќР°СЃС‚СЂРѕР№РєР° Midi РІ DMX"
 FONT 9, "MS Shell Dlg", 400, 0, 0
 {
 	CONTROL         "", 901, WC_LISTVIEW, WS_BORDER | LVS_SHOWSELALWAYS | LVS_REPORT, 5, 7, 336, 227
-		LTEXT           "Синтезируйте midi-сообщения с ваших MIDI-устройств, а затем отредактируйте параметры DMX.", 101, 5, 239, 336, 9, NOT WS_GROUP | SS_LEFT
+		LTEXT           "РЎРёРЅС‚РµР·РёСЂСѓР№С‚Рµ midi-СЃРѕРѕР±С‰РµРЅРёСЏ СЃ РІР°С€РёС… MIDI-СѓСЃС‚СЂРѕР№СЃС‚РІ, Р° Р·Р°С‚РµРј РѕС‚СЂРµРґР°РєС‚РёСЂСѓР№С‚Рµ РїР°СЂР°РјРµС‚СЂС‹ DMX.", 101, 5, 239, 336, 9, NOT WS_GROUP | SS_LEFT
 		//		AUTOCHECKBOX    "Click this if the selected controller is positive/negative form.", 201, 5, 252, 280, 11
 }
 
@@ -38,23 +38,23 @@ FONT 9, "MS Shell Dlg", 400, 0, 0
 
 DIALOG_NEWPROJECTX DIALOGEX 0, 0, 416, 203
 STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | DS_CENTER | WS_POPUP | WS_CAPTION | WS_SYSMENU
-CAPTION "Новый Проект"
+CAPTION "РќРѕРІС‹Р№ РџСЂРѕРµРєС‚"
 FONT 8, "MS Shell Dlg", 400, 0, 0x1
 BEGIN
-LTEXT           "Название:", IDC_STATIC, 13, 21, 45, 8
+LTEXT           "РќР°Р·РІР°РЅРёРµ:", IDC_STATIC, 13, 21, 45, 8
 EDITTEXT        101, 78, 19, 262, 14, ES_AUTOHSCROLL
-LTEXT           "Папка:", IDC_STATIC, 13, 40, 23, 8
+LTEXT           "РџР°РїРєР°:", IDC_STATIC, 13, 40, 23, 8
 EDITTEXT        102, 78, 38, 262, 13, ES_AUTOHSCROLL
-PUSHBUTTON      "Выбрать...", 201, 354, 38, 40, 14
-LTEXT           "Драйвер Звука:", IDC_STATIC, 13, 61, 44, 8
-LTEXT           "Статический", 701, 79, 61, 261, 30
-PUSHBUTTON      "Сменить...", 202, 354, 61, 40, 14
-GROUPBOX        "Первоначальное рабочее пространство:", IDC_STATIC, 79, 97, 118, 57
-CONTROL         "Видео", 301, "Button", BS_AUTORADIOBUTTON | WS_GROUP | WS_TABSTOP, 104, 116, 34, 10
-CONTROL         "Звук", 302, "Button", BS_AUTORADIOBUTTON | WS_TABSTOP, 104, 129, 34, 10
-LTEXT           "Вы можете легко переключиться с рабочего пространства звука на видео в рамках проекта, нажав F12.", IDC_STATIC, 79, 161, 164, 30
+PUSHBUTTON      "Р’С‹Р±СЂР°С‚СЊ...", 201, 354, 38, 40, 14
+LTEXT           "Р”СЂР°Р№РІРµСЂ Р—РІСѓРєР°:", IDC_STATIC, 13, 61, 44, 8
+LTEXT           "РЎС‚Р°С‚РёС‡РµСЃРєРёР№", 701, 79, 61, 261, 30
+PUSHBUTTON      "РЎРјРµРЅРёС‚СЊ...", 202, 354, 61, 40, 14
+GROUPBOX        "РџРµСЂРІРѕРЅР°С‡Р°Р»СЊРЅРѕРµ СЂР°Р±РѕС‡РµРµ РїСЂРѕСЃС‚СЂР°РЅСЃС‚РІРѕ:", IDC_STATIC, 79, 97, 118, 57
+CONTROL         "Р’РёРґРµРѕ", 301, "Button", BS_AUTORADIOBUTTON | WS_GROUP | WS_TABSTOP, 104, 116, 34, 10
+CONTROL         "Р—РІСѓРє", 302, "Button", BS_AUTORADIOBUTTON | WS_TABSTOP, 104, 129, 34, 10
+LTEXT           "Р’С‹ РјРѕР¶РµС‚Рµ Р»РµРіРєРѕ РїРµСЂРµРєР»СЋС‡РёС‚СЊСЃСЏ СЃ СЂР°Р±РѕС‡РµРіРѕ РїСЂРѕСЃС‚СЂР°РЅСЃС‚РІР° Р·РІСѓРєР° РЅР° РІРёРґРµРѕ РІ СЂР°РјРєР°С… РїСЂРѕРµРєС‚Р°, РЅР°Р¶Р°РІ F12.", IDC_STATIC, 79, 161, 164, 30
 DEFPUSHBUTTON   "OK", IDOK, 279, 179, 50, 14
-PUSHBUTTON      "Отмена", IDCANCEL, 342, 179, 51, 14
+PUSHBUTTON      "РћС‚РјРµРЅР°", IDCANCEL, 342, 179, 51, 14
 END
 
 
@@ -64,43 +64,43 @@ END
 
 DIALOG_NEWPROJECTX DIALOGEX 0, 0, 320, 187
 STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU | DS_CENTER
-CAPTION "Новый Проект"
+CAPTION "РќРѕРІС‹Р№ РџСЂРѕРµРєС‚"
 FONT 8, "MS Shell Dlg", 400, 0, 0x1
 BEGIN
-LTEXT           "Название:", IDC_STATIC, 18, 21, 45, 8
+LTEXT           "РќР°Р·РІР°РЅРёРµ:", IDC_STATIC, 18, 21, 45, 8
 EDITTEXT        101, 77, 19, 173, 14, ES_AUTOHSCROLL
-LTEXT           "Папка:", IDC_STATIC, 19, 40, 23, 8
+LTEXT           "РџР°РїРєР°:", IDC_STATIC, 19, 40, 23, 8
 EDITTEXT        102, 77, 38, 173, 13, ES_AUTOHSCROLL
-PUSHBUTTON      "Выбрать...", 201, 254, 38, 36, 14
-LTEXT           "Драйвер Звука:", IDC_STATIC, 20, 61, 44, 8
-PUSHBUTTON      "Сменить...", 202, 254, 59, 36, 14
-LTEXT           "Статический", 701, 79, 61, 164, 30
+PUSHBUTTON      "Р’С‹Р±СЂР°С‚СЊ...", 201, 254, 38, 36, 14
+LTEXT           "Р”СЂР°Р№РІРµСЂ Р—РІСѓРєР°:", IDC_STATIC, 20, 61, 44, 8
+PUSHBUTTON      "РЎРјРµРЅРёС‚СЊ...", 202, 254, 59, 36, 14
+LTEXT           "РЎС‚Р°С‚РёС‡РµСЃРєРёР№", 701, 79, 61, 164, 30
 DEFPUSHBUTTON   "OK", IDOK, 199, 166, 50, 14
-PUSHBUTTON      "Отмена", IDCANCEL, 262, 166, 51, 14
+PUSHBUTTON      "РћС‚РјРµРЅР°", IDCANCEL, 262, 166, 51, 14
 END
 */
 
 
 DIALOG_NEWPROJECT DIALOGEX 0, 0, 345, 167
 STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | DS_CENTER | WS_POPUP | WS_CAPTION | WS_SYSMENU
-CAPTION "Новый проект"
+CAPTION "РќРѕРІС‹Р№ РїСЂРѕРµРєС‚"
 FONT 8, "MS Shell Dlg", 400, 0, 0x1
 BEGIN
-LTEXT           "Название проекта:", IDC_STATIC, 17, 21, 57, 8
+LTEXT           "РќР°Р·РІР°РЅРёРµ РїСЂРѕРµРєС‚Р°:", IDC_STATIC, 17, 21, 57, 8
 EDITTEXT        101, 96, 19, 235, 14, ES_AUTOHSCROLL
-LTEXT           "Папка:", IDC_STATIC, 17, 44, 57, 8
+LTEXT           "РџР°РїРєР°:", IDC_STATIC, 17, 44, 57, 8
 EDITTEXT        102, 96, 41, 159, 14, ES_AUTOHSCROLL
-PUSHBUTTON      "Выбрать...", 301, 280, 41, 50, 14
-LTEXT           "Драйвер ASIO:", IDC_STATIC, 17, 71, 48, 8
+PUSHBUTTON      "Р’С‹Р±СЂР°С‚СЊ...", 301, 280, 41, 50, 14
+LTEXT           "Р”СЂР°Р№РІРµСЂ ASIO:", IDC_STATIC, 17, 71, 48, 8
 COMBOBOX        901, 94, 68, 159, 30, CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
-PUSHBUTTON      "Панель управления", 302, 279, 67, 50, 14
-LTEXT           "Частота дискретизации:", IDC_STATIC, 17, 88, 48, 8
+PUSHBUTTON      "РџР°РЅРµР»СЊ СѓРїСЂР°РІР»РµРЅРёСЏ", 302, 279, 67, 50, 14
+LTEXT           "Р§Р°СЃС‚РѕС‚Р° РґРёСЃРєСЂРµС‚РёР·Р°С†РёРё:", IDC_STATIC, 17, 88, 48, 8
 COMBOBOX        902, 94, 86, 87, 30, CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
-LTEXT           "Размер буфера:", IDC_STATIC, 17, 107, 48, 8
+LTEXT           "Р Р°Р·РјРµСЂ Р±СѓС„РµСЂР°:", IDC_STATIC, 17, 107, 48, 8
 CONTROL         "", 911, "msctls_trackbar32", TBS_BOTH | TBS_NOTICKS | WS_TABSTOP, 94, 103, 160, 15
 EDITTEXT        711, 267, 103, 62, 14, ES_AUTOHSCROLL | ES_READONLY
 DEFPUSHBUTTON   "OK", IDOK, 224, 146, 50, 14
-PUSHBUTTON      "Отмена", IDCANCEL, 278, 146, 50, 14
+PUSHBUTTON      "РћС‚РјРµРЅР°", IDCANCEL, 278, 146, 50, 14
 END
 
 
@@ -108,26 +108,26 @@ END
 
 DIALOG_VSTLOAD DIALOGEX 0, 0, 310, 177
 STYLE DS_SETFONT | DS_CENTER | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
-CAPTION "Загрузка VST"
+CAPTION "Р—Р°РіСЂСѓР·РєР° VST"
 FONT 8, "MS Shell Dlg", 400, 0, 0x1
 BEGIN
 EDITTEXT        101, 56, 14, 212, 14, ES_AUTOHSCROLL
-LTEXT           "Файл:", IDC_STATIC, 15, 16, 30, 10
+LTEXT           "Р¤Р°Р№Р»:", IDC_STATIC, 15, 16, 30, 10
 PUSHBUTTON      "...", 201, 272, 14, 28, 14
-GROUPBOX        "Метод", IDC_STATIC, 19, 40, 69, 51, WS_GROUP
+GROUPBOX        "РњРµС‚РѕРґ", IDC_STATIC, 19, 40, 69, 51, WS_GROUP
 CONTROL         "Local", 301, "Button", BS_AUTORADIOBUTTON, 29, 56, 33, 10
 CONTROL         "External", 302, "Button", BS_AUTORADIOBUTTON, 29, 71, 42, 10
-GROUPBOX        "Протокол", IDC_STATIC, 94, 40, 69, 51, WS_GROUP
+GROUPBOX        "РџСЂРѕС‚РѕРєРѕР»", IDC_STATIC, 94, 40, 69, 51, WS_GROUP
 CONTROL         "VST 2.x", 303, "Button", BS_AUTORADIOBUTTON, 104, 56, 42, 10
 CONTROL         "VST 3.x", 304, "Button", BS_AUTORADIOBUTTON, 104, 71, 42, 10
-PUSHBUTTON      "Тест", 202, 169, 44, 50, 14, WS_GROUP
-CONTROL         "Активировать UAC Virtualization", 311, "Button", BS_AUTOCHECKBOX | WS_TABSTOP, 19, 97, 98, 10
+PUSHBUTTON      "РўРµСЃС‚", 202, 169, 44, 50, 14, WS_GROUP
+CONTROL         "РђРєС‚РёРІРёСЂРѕРІР°С‚СЊ UAC Virtualization", 311, "Button", BS_AUTOCHECKBOX | WS_TABSTOP, 19, 97, 98, 10
 LTEXT           "VST 3 Class:", 702, 27, 111, 169, 49
 EDITTEXT        102, 76, 109, 50, 14, ES_AUTOHSCROLL | ES_NUMBER
 
-LTEXT           "Чтобы протестировать плагин перед загрузкой, нажмите кнопку Тест", 701, 17, 131, 169, 49
+LTEXT           "Р§С‚РѕР±С‹ РїСЂРѕС‚РµСЃС‚РёСЂРѕРІР°С‚СЊ РїР»Р°РіРёРЅ РїРµСЂРµРґ Р·Р°РіСЂСѓР·РєРѕР№, РЅР°Р¶РјРёС‚Рµ РєРЅРѕРїРєСѓ РўРµСЃС‚", 701, 17, 131, 169, 49
 DEFPUSHBUTTON   "OK", IDOK, 197, 156, 50, 14
-PUSHBUTTON      "Отмена", IDCANCEL, 250, 156, 50, 14
+PUSHBUTTON      "РћС‚РјРµРЅР°", IDCANCEL, 250, 156, 50, 14
 END
 
 
@@ -139,22 +139,22 @@ END
 
 CHOOSECOLOR2 DIALOGEX 2, 0, 318, 185
 STYLE DS_SETFONT | DS_MODALFRAME | DS_3DLOOK | DS_FIXEDSYS | DS_CENTER | WS_POPUP | WS_CAPTION | WS_SYSMENU
-CAPTION "Цвет"
+CAPTION "Р¦РІРµС‚"
 FONT 8, "MS Shell Dlg", 0, 0, 0x0
 BEGIN
-LTEXT           "&Основные цвета:", -1, 4, 4, 140, 9
+LTEXT           "&РћСЃРЅРѕРІРЅС‹Рµ С†РІРµС‚Р°:", -1, 4, 4, 140, 9
 CONTROL         "", COLOR_BOX1, "Static", SS_SIMPLE | WS_GROUP | WS_TABSTOP, 4, 14, 140, 86
-LTEXT           "&Пользовательские цвета:", -1, 4, 106, 140, 9
+LTEXT           "&РџРѕР»СЊР·РѕРІР°С‚РµР»СЊСЃРєРёРµ С†РІРµС‚Р°:", -1, 4, 106, 140, 9
 CONTROL         "", COLOR_CUSTOM1, "Static", SS_SIMPLE | WS_GROUP | WS_TABSTOP, 4, 116, 140, 28
-PUSHBUTTON      "&Определите пользовательские цвета >>", COLOR_MIX, 4, 150, 138, 14, WS_GROUP
+PUSHBUTTON      "&РћРїСЂРµРґРµР»РёС‚Рµ РїРѕР»СЊР·РѕРІР°С‚РµР»СЊСЃРєРёРµ С†РІРµС‚Р° >>", COLOR_MIX, 4, 150, 138, 14, WS_GROUP
 DEFPUSHBUTTON   "OK", IDOK, 4, 166, 44, 14, WS_GROUP
-PUSHBUTTON      "Отмена", IDCANCEL, 52, 166, 44, 14, WS_GROUP
-PUSHBUTTON      "&Помощь", 1038, 100, 166, 44, 14, WS_GROUP
+PUSHBUTTON      "РћС‚РјРµРЅР°", IDCANCEL, 52, 166, 44, 14, WS_GROUP
+PUSHBUTTON      "&РџРѕРјРѕС‰СЊ", 1038, 100, 166, 44, 14, WS_GROUP
 CONTROL         "", COLOR_RAINBOW, "Static", SS_SIMPLE | SS_SUNKEN, 152, 4, 118, 98
 CONTROL         "", COLOR_LUMSCROLL, "Static", SS_SIMPLE | SS_SUNKEN, 280, 4, 8, 98
 CONTROL         "", COLOR_CURRENT, "Static", SS_SIMPLE | SS_SUNKEN, 152, 106, 40, 44
 PUSHBUTTON      "&o", COLOR_SOLID, 300, 200, 6, 14, WS_GROUP
-RTEXT           "Цвет", COLOR_SOLID_LEFT, 152, 151, 20, 9
+RTEXT           "Р¦РІРµС‚", COLOR_SOLID_LEFT, 152, 151, 20, 9
 LTEXT           "|S&olid", COLOR_SOLID_RIGHT, 172, 151, 20, 9
 RTEXT           "Hu&e:", COLOR_HUEACCEL, 194, 126, 20, 9
 EDITTEXT        COLOR_HUE, 216, 124, 18, 12, WS_GROUP
@@ -170,7 +170,7 @@ RTEXT           "&Green:", COLOR_GREENACCEL, 238, 140, 24, 9
 EDITTEXT        COLOR_GREEN, 265, 138, 22, 12, WS_GROUP
 RTEXT           "Bl&ue:", COLOR_BLUEACCEL, 238, 154, 24, 9
 EDITTEXT        COLOR_BLUE, 265, 152, 22, 12, WS_GROUP
-PUSHBUTTON      "&Добавить к пользовательским цветам", COLOR_ADD, 152, 166, 142, 14, WS_GROUP
+PUSHBUTTON      "&Р”РѕР±Р°РІРёС‚СЊ Рє РїРѕР»СЊР·РѕРІР°С‚РµР»СЊСЃРєРёРј С†РІРµС‚Р°Рј", COLOR_ADD, 152, 166, 142, 14, WS_GROUP
 CONTROL         "", 991, "msctls_trackbar32", TBS_VERT | TBS_BOTH | TBS_NOTICKS | WS_TABSTOP, 294, 2, 22, 160
 END
 
@@ -178,19 +178,19 @@ END
 
 DIALOG_CAMERALENSPICKER DIALOGEX 0, 0, 410, 177
 STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU | DS_CENTER
-CAPTION "Выбор камеры и объектива"
+CAPTION "Р’С‹Р±РѕСЂ РєР°РјРµСЂС‹ Рё РѕР±СЉРµРєС‚РёРІР°"
 FONT 8, "MS Shell Dlg", 400, 0, 0x1
 BEGIN
-LTEXT           "Производитель:", IDC_STATIC, 26, 24, 47, 8
+LTEXT           "РџСЂРѕРёР·РІРѕРґРёС‚РµР»СЊ:", IDC_STATIC, 26, 24, 47, 8
 COMBOBOX        901, 94, 22, 223, 30, CBS_DROPDOWNLIST | CBS_SORT | WS_VSCROLL | WS_TABSTOP
-LTEXT           "Модель:", IDC_STATIC, 26, 54, 47, 8
+LTEXT           "РњРѕРґРµР»СЊ:", IDC_STATIC, 26, 54, 47, 8
 COMBOBOX        902, 94, 52, 223, 30, CBS_DROPDOWNLIST | CBS_SORT | WS_VSCROLL | WS_TABSTOP
-LTEXT           "Объектив:", IDC_STATIC, 26, 84, 47, 8
+LTEXT           "РћР±СЉРµРєС‚РёРІ:", IDC_STATIC, 26, 84, 47, 8
 COMBOBOX        903, 94, 82, 223, 30, CBS_DROPDOWNLIST | CBS_SORT | WS_VSCROLL | WS_TABSTOP
-LTEXT           "Модель объектива:", IDC_STATIC, 26, 114, 47, 8
+LTEXT           "РњРѕРґРµР»СЊ РѕР±СЉРµРєС‚РёРІР°:", IDC_STATIC, 26, 114, 47, 8
 COMBOBOX        904, 94, 112, 223, 30, CBS_DROPDOWNLIST | CBS_SORT | WS_VSCROLL | WS_TABSTOP
 DEFPUSHBUTTON   "OK", IDOK, 199, 156, 50, 14
-PUSHBUTTON      "Отмена", IDCANCEL, 253, 156, 50, 14
+PUSHBUTTON      "РћС‚РјРµРЅР°", IDCANCEL, 253, 156, 50, 14
 END
 
 
@@ -200,20 +200,20 @@ END
 
 DIALOG_MIDICONFIGURATION2 DIALOGEX 0, 0, 271, 260
 STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | DS_CENTER | WS_POPUP | WS_CAPTION | WS_SYSMENU
-CAPTION "Конфигурация MIDI"
+CAPTION "РљРѕРЅС„РёРіСѓСЂР°С†РёСЏ MIDI"
 FONT 8, "MS Shell Dlg", 400, 0, 0x1
 BEGIN
-LTEXT           "MIDI Драйверы", IDC_STATIC, 16, 15, 48, 9
+LTEXT           "MIDI Р”СЂР°Р№РІРµСЂС‹", IDC_STATIC, 16, 15, 48, 9
 CONTROL         "", 901, "SysListView32", LVS_REPORT | LVS_ALIGNLEFT | LVS_NOSORTHEADER | WS_BORDER | WS_TABSTOP, 16, 33, 134, 205
 CONTROL         "Opened", 201, "Button", BS_AUTOCHECKBOX | WS_TABSTOP, 165, 35, 86, 10
-CONTROL         "Использовать для записи заметок", 211, "Button", BS_AUTOCHECKBOX | WS_TABSTOP, 165, 72, 71, 10
-CONTROL         "Использовать как контроллер mackie", 212, "Button", BS_AUTOCHECKBOX | WS_TABSTOP, 165, 84, 92, 10
-CONTROL         "Использовать как смартпэд", 213, "Button", BS_AUTOCHECKBOX | WS_TABSTOP, 165, 97, 68, 10
-CONTROL         "Использовать как DJ-контроллер", 214, "Button", BS_AUTOCHECKBOX | WS_TABSTOP, 165, 110, 79, 10
-CONTROL         "Использовать как DMX контроллер", 215, "Button", BS_AUTOCHECKBOX | WS_TABSTOP, 165, 123, 90, 10
-CONTROL         "Использовать как midi выход", 216, "Button", BS_AUTOCHECKBOX | WS_TABSTOP, 165, 136, 90, 10
-CONTROL         "Использовать как контроллер эффектов", 217, "Button", BS_AUTOCHECKBOX | WS_TABSTOP, 165, 149, 90, 10
-PUSHBUTTON      "Калибровка DJ-контроллера", 301, 165, 178, 88, 14
+CONTROL         "РСЃРїРѕР»СЊР·РѕРІР°С‚СЊ РґР»СЏ Р·Р°РїРёСЃРё Р·Р°РјРµС‚РѕРє", 211, "Button", BS_AUTOCHECKBOX | WS_TABSTOP, 165, 72, 71, 10
+CONTROL         "РСЃРїРѕР»СЊР·РѕРІР°С‚СЊ РєР°Рє РєРѕРЅС‚СЂРѕР»Р»РµСЂ mackie", 212, "Button", BS_AUTOCHECKBOX | WS_TABSTOP, 165, 84, 92, 10
+CONTROL         "РСЃРїРѕР»СЊР·РѕРІР°С‚СЊ РєР°Рє СЃРјР°СЂС‚РїСЌРґ", 213, "Button", BS_AUTOCHECKBOX | WS_TABSTOP, 165, 97, 68, 10
+CONTROL         "РСЃРїРѕР»СЊР·РѕРІР°С‚СЊ РєР°Рє DJ-РєРѕРЅС‚СЂРѕР»Р»РµСЂ", 214, "Button", BS_AUTOCHECKBOX | WS_TABSTOP, 165, 110, 79, 10
+CONTROL         "РСЃРїРѕР»СЊР·РѕРІР°С‚СЊ РєР°Рє DMX РєРѕРЅС‚СЂРѕР»Р»РµСЂ", 215, "Button", BS_AUTOCHECKBOX | WS_TABSTOP, 165, 123, 90, 10
+CONTROL         "РСЃРїРѕР»СЊР·РѕРІР°С‚СЊ РєР°Рє midi РІС‹С…РѕРґ", 216, "Button", BS_AUTOCHECKBOX | WS_TABSTOP, 165, 136, 90, 10
+CONTROL         "РСЃРїРѕР»СЊР·РѕРІР°С‚СЊ РєР°Рє РєРѕРЅС‚СЂРѕР»Р»РµСЂ СЌС„С„РµРєС‚РѕРІ", 217, "Button", BS_AUTOCHECKBOX | WS_TABSTOP, 165, 149, 90, 10
+PUSHBUTTON      "РљР°Р»РёР±СЂРѕРІРєР° DJ-РєРѕРЅС‚СЂРѕР»Р»РµСЂР°", 301, 165, 178, 88, 14
 END
 
 
@@ -238,7 +238,7 @@ LTEXT           "Michael Chourdakis\r\n\r\nUsing licensed code from:\r\nAdobe\r\
 LTEXT           "GitHub code:", 604, 260, 68, 76, 15
 LTEXT           "7-Zip\r\nOpenCV\r\nDSPFilters\r\nTinySoundFont\r\nOpus\r\nMOD Player\r\nDirectXTK\r\nDemux\r\nColorization\r\nGuido Project\r\nMilkdrop\r\nLensFun\r\nLottie\r\nMatPlot\r\nLUT\r\nOpenDMX\r\nAdobe PSD\r\nOgg/Vorbis\r\nTesseract\r\nPDFium\r\nOpenEXR\r\nIGorski\r\nLipSync\r\nand others.", 653, 260, 90, 129, 267
 LTEXT           "Special Thanks:", 603, 497, 68, 76, 15
-LTEXT           "Alessandro Loiacono\r\nAngel Corrales\r\nDouglas Kehlhem\r\nElsa Hill\r\nEmil Melar\r\nGerman Matнas Lucero\r\nSherget Hagat\r\nSylvia Dremetsika\r\nYiannis Malafis\r\nMy sound engineering team", 652, 505, 90, 129, 295
+LTEXT           "Alessandro Loiacono\r\nAngel Corrales\r\nDouglas Kehlhem\r\nElsa Hill\r\nEmil Melar\r\nGerman MatРЅas Lucero\r\nSherget Hagat\r\nSylvia Dremetsika\r\nYiannis Malafis\r\nMy sound engineering team", 652, 505, 90, 129, 295
 CONTROL         "<a href=""https://www.turbo-play.com"">www.turbo-play.com</a>", 302, "SysLink", WS_TABSTOP, 200, 404, 107, 11
 CONTROL         "<a href=""https://www.steinberg.net"">www.steinberg.net</a>", 301, "SysLink", WS_TABSTOP, 300, 404, 67, 11
 CONTROL         "<a href=""https://www.shadertoy.com"">www.shadertoy.com</a>", 303, "SysLink", WS_TABSTOP, 400, 404, 107, 11
