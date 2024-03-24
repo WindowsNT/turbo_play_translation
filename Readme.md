@@ -4,6 +4,8 @@
 ## language_en.h
 
 Language_en must be translated entirely. **This is the most important file to be translated**.
+Ignore lines that contain paths.
+Ingore lines that have the //NT comment.
 
 ## menus.rc and mainmenu.rc
 

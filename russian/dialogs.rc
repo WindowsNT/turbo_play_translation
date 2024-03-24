@@ -3,8 +3,6 @@
 #include "commctrl.h"
 #define IDC_STATIC -1
 
-#include "dialogs_u.rc"
-
 
 
 DIALOG_CONTROLLERMAPEXPLORER DIALOGEX 0, 0, 355, 269

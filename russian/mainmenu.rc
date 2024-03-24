@@ -1,0 +1,950 @@
+// Main menu
+
+
+MENU_MAIN_V_COMPLEX MENU
+{
+	POPUP "&File"
+	{
+		MENUITEM "New Project...\tCtrl+N",101
+		MENUITEM "Open Project...\tCtrl+O",102
+		MENUITEM SEPARATOR
+		MENUITEM "Save Project\tCtrl+S",103
+		MENUITEM "Save as...",106
+		MENUITEM SEPARATOR
+		MENUITEM "Rename Project...",107
+		MENUITEM "Cleanup Project...",104
+		MENUITEM SEPARATOR
+		MENUITEM "My license...",997
+		MENUITEM SEPARATOR
+		MENUITEM "Languages...",995
+		MENUITEM "Home",990
+		MENUITEM SEPARATOR
+		MENUITEM "Exit",996
+	}
+	POPUP "Edit"
+	{
+		MENUITEM "Undo\tCtrl+Z",18572
+		MENUITEM "Redo\tCtrl+Y",18573
+		MENUITEM SEPARATOR
+		MENUITEM "Set position...\tCtrl+G",18555
+		MENUITEM "Set view...\tCtrl+Shift+G",18556
+		MENUITEM "Set selection...\tCtrl+Alt+G",18557
+		MENUITEM SEPARATOR
+		MENUITEM "Part filtering...\tCtrl+F",18535
+		MENUITEM SEPARATOR
+		POPUP "Preferences"
+		{
+			MENUITEM "Options\tF11", 105
+				MENUITEM "Keyboard shortcuts...\tCtrl+Alt+K", 108
+				MENUITEM "Colors...\tShift+Alt+F11", 18887
+		}
+
+	}
+	POPUP "View"
+	{
+/*		POPUP "Toolbar and menu"
+		{
+			MENUITEM "Plain menu",18776
+			MENUITEM "Ribbon toolbar (minimized)",18777
+			MENUITEM "Ribbon toolbar (full)",18778
+		}
+		MENUITEM SEPARATOR
+*/
+		MENUITEM "Media Bay\tAlt+B",18553
+		MENUITEM "Effects\tAlt+E",18571
+		MENUITEM "Quick Mixer\tAlt+X",18575
+		MENUITEM SEPARATOR
+		MENUITEM "~718\tAlt+1",17701
+		MENUITEM "~681\tAlt+2",17702
+		MENUITEM "~683\tAlt+3",17703
+		MENUITEM "~313\tAlt+4",17704
+		MENUITEM "~727\tAlt+5",17705
+		MENUITEM SEPARATOR
+		MENUITEM "~753\tAlt+6",17706
+		MENUITEM "~754\tAlt+7",17707
+		MENUITEM "~639\tAlt+8",17708
+		MENUITEM "~747\tAlt+9",17709
+		MENUITEM SEPARATOR
+		POPUP "Workspace"
+		{
+			MENUITEM "Video editor (Advanced)",11602
+			MENUITEM "Video editor (Simple)",11692
+			MENUITEM SEPARATOR
+			MENUITEM "Audio editor (Advanced)",11601
+			MENUITEM "Audio editor (Simple)",11681
+		}
+	}
+/*	POPUP "Scene"
+	{
+		MENUITEM "Add a new scene",11611
+		MENUITEM "Rename a scene",11615
+		MENUITEM "Duplicate current scene",11614
+		MENUITEM "Current scene speed...",11628
+		MENUITEM SEPARATOR
+		MENUITEM "Switch to scene...",11612
+		MENUITEM SEPARATOR
+		POPUP "Timelines"
+		{
+			MENUITEM "Add timeline",11631
+//			MENUITEM "Add external timeline",11633
+			MENUITEM "Remove timeline",11632
+		}
+		MENUITEM SEPARATOR
+		MENUITEM "Copy current scene to clipboard",11625
+		MENUITEM "Paste scene",11626
+		MENUITEM SEPARATOR
+		MENUITEM "Reorder scenes...",18879
+		MENUITEM "Select scenes for rendering...",18886
+		MENUITEM SEPARATOR
+		MENUITEM "Current scene options\tShift+F11",18889
+	}*/
+
+	POPUP "Layer"
+	{
+		MENUITEM "Add one\tCtrl+L",11771
+		MENUITEM "Add many...",11772
+		MENUITEM "Add a video wall...",11773
+	}
+	POPUP "Insert"
+	{
+		MENUITEM "Any item...\tCtrl+I",11500
+		MENUITEM SEPARATOR
+		MENUITEM "Video or Audio...",11541
+		MENUITEM "Images...",11543
+		MENUITEM "Text\tT",11743
+		MENUITEM SEPARATOR
+		MENUITEM "Folder...\tCtrl+Shift+I",11549
+		MENUITEM SEPARATOR
+		POPUP "Animated text"
+		{
+			MENUITEM "Scrolling",11781
+			MENUITEM "Typing",11782
+			MENUITEM "Credits",11783
+			MENUITEM "Growing",11784
+			MENUITEM "Grow and rotate",11785
+			MENUITEM "Time",11791
+			MENUITEM "Countdown",11792
+			MENUITEM "Handwriting text",11732
+		}
+		POPUP "Visual Sound"
+		{
+			MENUITEM "Milkdrop",11510
+			MENUITEM "HLSL",11710
+		}
+		POPUP "Drawing Tools"
+		{
+			MENUITEM "Primitive Animation",11731
+			MENUITEM "Old mode Animation",11744
+			MENUITEM "Ink Drawing",11739
+			MENUITEM "Math Plot",11734
+			MENUITEM "Handwriting Text",11732
+		}
+		POPUP "3D Tools"
+		{
+			MENUITEM "3D object",11530
+			MENUITEM "3D text",11534
+		}
+		POPUP "Camera Capture"
+		{
+			MENUITEM "Image",11547
+			MENUITEM "Video",11577
+		}
+		POPUP "Other Functions"
+		{
+			MENUITEM "Capture Screen", 11594
+			MENUITEM "GLSL ShaderToy",11735
+			MENUITEM "PDF",11747
+			MENUITEM "Map",11748
+			MENUITEM "HTML",11733
+			MENUITEM "Complex Color",11598
+			MENUITEM "Convert unsupported video",11570
+			MENUITEM "Image from clipboard",11546
+			MENUITEM "Audio only from video",11677
+			MENUITEM "Scanner/Camera...",11678
+			MENUITEM "Speech -> Text", 11110
+		}
+	}
+	POPUP "Collaboration"
+	{
+		MENUITEM "Create package...",110
+		MENUITEM SEPARATOR
+		MENUITEM "Cloud Open...",992
+		MENUITEM "Cloud Save...",993
+		MENUITEM SEPARATOR
+		MENUITEM "Share Turbo Play...",11415
+		MENUITEM "Share Desktop...",11418
+		MENUITEM "Join...",11417
+		MENUITEM SEPARATOR
+		MENUITEM "Enable Web Remote Control Server...", 11400
+	}
+	POPUP "AI"
+	{
+		MENUITEM "Audio Demux", 12901
+			MENUITEM "Audio Karaoke", 12902
+			MENUITEM "Audio Speech To Text", 12903
+			MENUITEM "Audio Voice Fix", 12904
+		MENUITEM SEPARATOR
+		MENUITEM "Image Colorization", 12911
+		MENUITEM "Image BG Remover", 12912
+			MENUITEM "Image Content-Aware Brush", 17881
+			MENUITEM "Image Segments", 12913
+			MENUITEM "Image Auto Face Blur",12914
+			MENUITEM SEPARATOR
+			MENUITEM "Video Stabilizer", 12922
+			MENUITEM "Video Scene Detector",12921
+			MENUITEM SEPARATOR
+			MENUITEM "Text Auto Pos/Color",12931
+			MENUITEM "Text To Music", 13834
+	}
+	POPUP "Export"
+	{
+		MENUITEM "Video file...\tF5",11540
+		MENUITEM "Audio file...\tShift+F5",11509
+		MENUITEM SEPARATOR
+		MENUITEM "Select video scenes to render...",18886
+		MENUITEM SEPARATOR
+		POPUP "Audio exports"
+		{
+			POPUP "Multitrack export"
+			{
+				MENUITEM "FLAC with effects", 11571
+				MENUITEM "FLAC without effects", 11572
+				MENUITEM "WAV ZIP with effects", 11573
+				MENUITEM "WAV ZIP without effects",11574
+			}
+			POPUP "Realtime export"
+			{
+				MENUITEM "WAV", 11578
+				MENUITEM "FLAC ", 11579
+			}
+			MENUITEM "Export Audio to CD",11515
+		}
+		POPUP "Current Preview to Image"
+		{
+			MENUITEM "PNG", 11221
+			MENUITEM "JPG", 11220
+			MENUITEM "HDR JXR", 11223
+			MENUITEM "Clipboard", 11222
+			MENUITEM "Current Primitive Drawing to SVG..", 11210
+		}
+		POPUP "Current Selection"
+		{
+			MENUITEM "GIF", 11219
+			MENUITEM "Vector Print", 11209
+		}
+		POPUP "MIDI"
+		{
+			MENUITEM "MIDI", 11518
+			MENUITEM "Multitrack MIDI", 11558
+			MENUITEM "MusicXML", 11531
+		}
+		POPUP "Subtitles"
+		{
+			MENUITEM "All lyric/score tracks", 11564
+			MENUITEM "All visible lyric/score tracks", 11565
+			MENUITEM "Select tracks", 11566
+		}
+	}
+	POPUP "Library"
+	{
+		MENUITEM "VST and plugins explorer\tF4", 17115
+		MENUITEM "Style Player", 11610
+		MENUITEM SEPARATOR
+		MENUITEM "Preview effects", 10600
+		MENUITEM "Preview transitions", 10601
+		MENUITEM SEPARATOR
+		MENUITEM "Visualizations Showcase", 17110
+		MENUITEM "Sound Visualizations Showcase", 17111
+	}
+	POPUP "Audio"
+	{
+		MENUITEM "Mixer...\tF3",10513
+		MENUITEM "DMX Mixer...\tShift+F3",10593
+		MENUITEM "Flow Control...\tF9",10900
+		MENUITEM "Rythm",10506
+		MENUITEM "VSTs\tF4", 17115
+		MENUITEM "VST performance\tShift+F4", 17117
+		MENUITEM "Orchestra\tF7",10400
+		MENUITEM "Mackie Setup",10556
+	}
+	POPUP "Studio Setup"
+	{
+		POPUP "ASIO driver"
+		{
+			MENUITEM "Control panel", 10503
+				MENUITEM "Details...", 10504
+				MENUITEM "Change sample rate...", 10511
+				MENUITEM "Change buffer size...", 10512
+				MENUITEM "Switch clock", 10518
+				MENUITEM SEPARATOR
+				MENUITEM "Choose another driver", 10505
+		}
+		POPUP "Audio Setup"
+		{
+			MENUITEM "Pan setup", 10990
+				MENUITEM "Metronome channels", 10560
+				MENUITEM "3D room setup", 10515
+		}
+		POPUP "Audio Mode"
+		{
+			MENUITEM "Normal", 10522
+				MENUITEM "Mono", 10523
+		}
+		POPUP "MIDI"
+		{
+			MENUITEM "MIDI Devices..", 10553
+				MENUITEM "Current MIDI maps...", 12002
+				MENUITEM "MIDI map explorer...", 12001
+				MENUITEM "Toggle learning mode", 12003
+				MENUITEM "Record beat loop from MIDI device", 12005
+		}
+		POPUP "DMX"
+		{
+			MENUITEM "DMX Setup", 10543
+				MENUITEM "MIDI to DMX", 10554
+				MENUITEM "Load a fixture", 10557
+		}
+		POPUP "OSC"
+		{
+			MENUITEM "Behringer Open Sound Control...",10661
+		}
+		MENUITEM SEPARATOR
+			MENUITEM "3D mouse setup...", 10143
+			MENUITEM "Scan VSTs...", 11506
+			MENUITEM "VST performance...\tShift+F4", 17117
+			MENUITEM "VST and plugins explorer\tF4", 17115
+	}
+	POPUP "Tools"
+	{
+		POPUP "External Browsers"
+		{
+			MENUITEM "ShaderToy Browser", 11736
+				MENUITEM "Musical Artifacts Browser", 11738
+				MENUITEM "Thingiverse Browser", 11742
+		}
+		POPUP "Training"
+		{
+			MENUITEM "Ear training",10598
+			MENUITEM "Eye training",11671
+		}
+		POPUP "Video Tools"
+		{
+			MENUITEM "Preview effects", 10600
+			MENUITEM "Preview transitions", 10601
+			MENUITEM SEPARATOR
+			MENUITEM "Movie+Subtitles to MKV",10606
+			MENUITEM "Extract Subtitles from MKV",10607
+			MENUITEM "Videos to MP4",10610
+			MENUITEM "Split video to parts",10609
+			MENUITEM "Subtitles to Audio",10611
+			MENUITEM "Stabilize Videos",10612
+			MENUITEM "~2918", 10679
+		}
+		POPUP "Other Tools"
+		{
+			MENUITEM "SoundFont Creator", 11949
+			MENUITEM "Capture Screen", 11594
+			MENUITEM "Subtitles", 11597
+			MENUITEM "Speech to Text", 11110
+		}
+		MENUITEM SEPARATOR
+		MENUITEM "Debugging tools", 11445
+		MENUITEM SEPARATOR
+		MENUITEM "Check for updates...",998
+	}
+	POPUP "Help"
+	{	
+		MENUITEM "Manual\tF1",13111
+		MENUITEM "Web site",13110
+		MENUITEM SEPARATOR
+		MENUITEM "Example Projects",13114
+		MENUITEM "Video demos",13115
+		MENUITEM SEPARATOR
+		MENUITEM "Request instant support",11411
+		MENUITEM "Request remote debugging",11412
+		MENUITEM SEPARATOR
+		MENUITEM "Bug/Feature tracking",13118
+			MENUITEM "Submit feedback", 13116
+			MENUITEM "Business Contact",13113
+		MENUITEM SEPARATOR
+		MENUITEM "About...",999
+	}
+}
+
+MENU_MAIN_V_SIMPLE MENU
+{
+	POPUP "&File"
+	{
+		MENUITEM "New Project\tCtrl+N",101
+		MENUITEM "Open Project...\tCtrl+O",102
+		MENUITEM SEPARATOR
+		MENUITEM "Save Project\tCtrl+S",103
+		MENUITEM "Save as...",106
+		MENUITEM SEPARATOR
+		MENUITEM "Languages...",995
+		MENUITEM "My license...",997
+		MENUITEM SEPARATOR
+		MENUITEM "Exit",996
+	}
+	POPUP "Edit"
+	{
+		MENUITEM "Undo\tCtrl+Z",18572
+		MENUITEM "Redo\tCtrl+Y",18573
+		MENUITEM SEPARATOR
+		MENUITEM "Set position...\tCtrl+G",18555
+		MENUITEM "Set view...\tCtrl+Shift+G",18556
+		MENUITEM "Set selection...\tCtrl+Alt+G",18557
+		MENUITEM SEPARATOR
+		POPUP "Preferences"
+		{
+			MENUITEM "Options\tF11",105
+			MENUITEM "Keyboard shortcuts...\tCtrl+Alt+K",108
+			MENUITEM "Colors...\tShift+Alt+F11",18887
+		}
+	}
+	POPUP "View"
+	{
+/*		POPUP "Toolbar and menu"
+		{
+			MENUITEM "Plain menu",18776
+			MENUITEM "Ribbon toolbar (minimized)",18777
+			MENUITEM "Ribbon toolbar (full)",18778
+		}
+		MENUITEM SEPARATOR
+*/
+		MENUITEM "Media Bay\tAlt+B",18553
+		MENUITEM "Effects\tAlt+E",18571
+		MENUITEM "Quick Mixer\tAlt+X",18575
+		MENUITEM SEPARATOR
+		MENUITEM "~718\tAlt+1",17701
+		MENUITEM "~681\tAlt+2",17702
+		MENUITEM "~683\tAlt+3",17703
+		MENUITEM "~313\tAlt+4",17704
+		MENUITEM "~727\tAlt+5",17705
+		MENUITEM SEPARATOR
+		MENUITEM "~753\tAlt+6",17706
+		MENUITEM "~747\tAlt+7",17707
+		MENUITEM SEPARATOR
+		POPUP "Workspace"
+		{
+			MENUITEM "Video editor (Advanced)",11602
+			MENUITEM "Video editor (Simple)",11692
+			MENUITEM SEPARATOR
+			MENUITEM "Audio editor (Advanced)",11601
+			MENUITEM "Audio editor (Simple)",11681
+		}
+	}
+	POPUP "Layer"
+	{
+		MENUITEM "Add one\tCtrl+L",11771
+		MENUITEM "Add many...",11772
+	}
+	POPUP "Insert"
+	{
+		MENUITEM "Any item...\tCtrl+I",11500
+		MENUITEM SEPARATOR
+		MENUITEM "Video or Audio...",11541
+		MENUITEM "Images...",11543
+		MENUITEM "Text\tT",11743
+		MENUITEM SEPARATOR
+		MENUITEM "Folder...\tCtrl+Shift+I",11549
+		MENUITEM SEPARATOR
+		POPUP "Animated text"
+		{
+			MENUITEM "Scrolling",11781
+			MENUITEM "Typing",11782
+			MENUITEM "Credits",11783
+			MENUITEM "Growing",11784
+			MENUITEM "Grow and rotate",11785
+			MENUITEM "Time",11791
+			MENUITEM "Countdown",11792
+		}
+	}
+	POPUP "AI"
+	{
+		MENUITEM "Audio Demux",12901
+		MENUITEM "Audio Karaoke",12902
+			MENUITEM "Audio Speech To Text", 12903
+		MENUITEM SEPARATOR
+		MENUITEM "Image Colorization", 12911
+		MENUITEM "Image BG Remover", 12912
+		MENUITEM "Image Content-Aware Brush",17881
+			MENUITEM "Image Segments",12913
+			MENUITEM "Image Auto Face Blur",12914
+			MENUITEM SEPARATOR
+			MENUITEM "Video Stabilizer", 12922
+			MENUITEM "Video Scene Detector",12921
+			MENUITEM SEPARATOR
+			MENUITEM "Text Auto Pos/Color", 12931
+			MENUITEM "Text To Music", 13834
+	}
+	POPUP "Export"
+	{
+		MENUITEM "Video file...\tF5",11540
+		MENUITEM "Audio file...\tShift+F5",11509
+		POPUP "Current Preview to Image"
+		{
+			MENUITEM "PNG", 11221
+			MENUITEM "JPG", 11220
+		}
+	}
+	POPUP "Library"
+	{
+		MENUITEM "Preview effects", 10600
+		MENUITEM "Preview transitions", 10601
+		MENUITEM "Visualizations Showcase", 17110
+	}
+	POPUP "Audio"
+	{
+		MENUITEM "Mixer...\tF3",10513
+		MENUITEM "Flow Control...\tF9",10900
+	}
+	POPUP "Tools"
+	{
+		MENUITEM "Capture Screen", 11594
+		MENUITEM SEPARATOR
+		POPUP "Video Tools"
+		{
+			MENUITEM "Preview effects", 10600
+			MENUITEM "Preview transitions", 10601
+		}
+		MENUITEM SEPARATOR
+		MENUITEM "Check for updates...",998
+	}
+	POPUP "Help"
+	{
+		MENUITEM "Manual\tF1",13111
+		MENUITEM "Web site",13110
+		MENUITEM SEPARATOR
+		MENUITEM "Example Projects",13114
+		MENUITEM "Video demos",13115
+		MENUITEM SEPARATOR
+		MENUITEM "Bug/Feature tracking",13118
+			MENUITEM "Submit feedback",13116
+		MENUITEM "Business Contact",13113
+		MENUITEM SEPARATOR
+		MENUITEM "About...",999
+	}
+
+
+}
+
+
+MENU_MAIN_A_COMPLEX MENU
+{
+	POPUP "&File"
+	{
+		MENUITEM "New Project...\tCtrl+N",101
+		MENUITEM "Open Project...\tCtrl+O",102
+		MENUITEM SEPARATOR
+		MENUITEM "Save Project\tCtrl+S",103
+		MENUITEM "Save as...",106
+		MENUITEM SEPARATOR
+		MENUITEM "Rename Project...",107
+		MENUITEM "Cleanup Project...",104
+		MENUITEM SEPARATOR
+		MENUITEM "My license...",997
+		MENUITEM SEPARATOR
+		MENUITEM "Languages...",995
+		MENUITEM "Home",990
+		MENUITEM SEPARATOR
+		MENUITEM "Exit",996
+	}
+	POPUP "Edit"
+	{
+		MENUITEM "Undo\tCtrl+Z",18572
+		MENUITEM "Redo\tCtrl+Y",18573
+		MENUITEM SEPARATOR
+		MENUITEM "Set position...\tCtrl+G",18555
+		MENUITEM "Set view...\tCtrl+Shift+G",18556
+		MENUITEM "Set selection...\tCtrl+Alt+G",18557
+		MENUITEM SEPARATOR
+		MENUITEM "Part filtering...\tCtrl+F",18535
+		MENUITEM SEPARATOR
+
+		POPUP "Preferences"
+		{
+			MENUITEM "Options\tF11",105
+			MENUITEM "Keyboard shortcuts...\tCtrl+Alt+K",108
+			MENUITEM "Colors...\tShift+Alt+F11",18887
+		}
+	}
+	POPUP "View"
+	{
+/*		POPUP "Toolbar and menu"
+		{
+			MENUITEM "Plain menu",18776
+			MENUITEM "Ribbon toolbar (minimized)",18777
+			MENUITEM "Ribbon toolbar (full)",18778
+		}
+		MENUITEM SEPARATOR
+*/
+		MENUITEM "Media Bay\tAlt+B",18553
+		MENUITEM "Effects\tAlt+E",18571
+		MENUITEM "Quick Mixer\tAlt+X",18575
+		MENUITEM SEPARATOR
+		MENUITEM "~718\tAlt+1",17701
+		MENUITEM "~681\tAlt+2",17702
+		MENUITEM "~683\tAlt+3",17703
+		MENUITEM "~313\tAlt+4",17704
+		MENUITEM "~727\tAlt+5",17705
+		MENUITEM SEPARATOR
+		MENUITEM "~753\tAlt+6",17706
+		MENUITEM "~754\tAlt+7",17707
+		MENUITEM "~739\tAlt+8",17708
+		MENUITEM "~740\tAlt+9",17709
+		MENUITEM "~741\tAlt+0",17710
+		MENUITEM SEPARATOR
+		POPUP "Workspace"
+		{
+			MENUITEM "Video editor (Advanced)",11602
+			MENUITEM "Video editor (Simple)",11692
+			MENUITEM SEPARATOR
+			MENUITEM "Audio editor (Advanced)",11601
+			MENUITEM "Audio editor (Simple)",11681
+		}
+	}
+/*	POPUP "Scene"
+	{
+		MENUITEM "Add a new scene",11611
+		MENUITEM "Rename a scene",11615
+		MENUITEM "Duplicate current scene",11614
+		MENUITEM "Current scene speed...",11628
+		MENUITEM SEPARATOR
+		MENUITEM "Switch to scene...",11612
+		MENUITEM SEPARATOR
+		POPUP "Timelines"
+		{
+			MENUITEM "Add timeline",11631
+//			MENUITEM "Add external timeline",11633
+			MENUITEM "Remove timeline",11632
+		}
+		MENUITEM SEPARATOR
+		MENUITEM "Copy current scene to clipboard",11625
+		MENUITEM "Paste scene",11626
+		MENUITEM SEPARATOR
+		MENUITEM "Reorder scenes...",18879
+		MENUITEM "Select scenes for rendering...",18886
+		MENUITEM SEPARATOR
+		MENUITEM "Current scene options\tShift+F11",18889
+	}
+	*/
+	POPUP "Track"
+	{
+		MENUITEM "Add one\tCtrl+T",11771
+		MENUITEM "Add many...",11772
+	}
+	POPUP "Insert"
+	{
+		MENUITEM "Any item...\tCtrl+I",11500
+		MENUITEM SEPARATOR
+			MENUITEM "Video or Audio...", 11541
+			MENUITEM SEPARATOR
+		MENUITEM "Folder...\tCtrl+Shift+I",11549
+	}
+	POPUP "Collaboration"
+	{
+		MENUITEM "Create package...",110
+		MENUITEM SEPARATOR
+		MENUITEM "Cloud Open...",992
+		MENUITEM "Cloud Save...",993
+		MENUITEM SEPARATOR
+		MENUITEM "Share Turbo Play...",11415
+		MENUITEM "Share Desktop...",11418
+		MENUITEM "Join...",11417
+		MENUITEM SEPARATOR
+		MENUITEM "Enable Web Remote Control Server...",11400
+	}
+	POPUP "AI"
+	{
+		MENUITEM "Audio Demux", 12901
+		MENUITEM "Audio Karaoke", 12902
+			MENUITEM "Audio Speech To Text", 12903
+	}
+	POPUP "Export"
+	{
+		MENUITEM "Audio file...\tShift+F5",11509
+		MENUITEM SEPARATOR
+		POPUP "Audio exports"
+		{
+			POPUP "Multitrack export"
+			{
+				MENUITEM "FLAC with effects", 11571
+				MENUITEM "FLAC without effects", 11572
+				MENUITEM "WAV ZIP with effects", 11573
+				MENUITEM "WAV ZIP without effects",11574
+			}
+			POPUP "Realtime export"
+			{
+				MENUITEM "WAV", 11578
+				MENUITEM "FLAC ", 11579
+			}
+			MENUITEM "Export Audio to CD",11515
+		}
+		POPUP "MIDI"
+		{
+			MENUITEM "MIDI", 11518
+			MENUITEM "Multitrack MIDI", 11558
+			MENUITEM "MusicXML", 11531
+		}
+		POPUP "Subtitles"
+		{
+			MENUITEM "All lyric/score tracks", 11564
+			MENUITEM "All visible lyric/score tracks", 11565
+			MENUITEM "Select tracks", 11566
+		}
+	}
+
+	POPUP "Library"
+	{
+		MENUITEM "VST and plugins explorer\tF4", 17115
+		MENUITEM "Style Player", 11610
+	}
+	POPUP "Audio"
+	{
+		MENUITEM "Mixer...\tF3", 10513
+		MENUITEM "DMX Mixer...\tShift+F3", 10593
+		MENUITEM "Flow Control...\tF9", 10900
+		MENUITEM "Rythm", 10506
+		MENUITEM "VST performance\tShift+F4", 17117
+		MENUITEM "VSTs\tF4", 17115
+		MENUITEM "Orchestra\tF7", 10400
+		MENUITEM "Mackie Setup", 10556
+	}
+
+	POPUP "Studio Setup"
+	{
+		POPUP "ASIO driver"
+		{
+			MENUITEM "Control panel", 10503
+				MENUITEM "Details...", 10504
+				MENUITEM "Change sample rate...", 10511
+				MENUITEM "Change buffer size...", 10512
+				MENUITEM "Switch clock", 10518
+				MENUITEM SEPARATOR
+				MENUITEM "Choose another driver", 10505
+		}
+		POPUP "Audio Setup"
+		{
+			MENUITEM "Pan setup", 10990
+				MENUITEM "Metronome channels", 10560
+				MENUITEM "3D room setup", 10515
+		}
+		POPUP "Audio Mode"
+		{
+			MENUITEM "Normal", 10522
+				MENUITEM "Mono", 10523
+		}
+		POPUP "MIDI"
+		{
+			MENUITEM "MIDI Devices..", 10553
+				MENUITEM "Current MIDI maps...", 12002
+				MENUITEM "MIDI map explorer...", 12001
+				MENUITEM "Toggle learning mode", 12003
+				MENUITEM "Record beat loop from MIDI device", 12005
+		}
+		POPUP "DMX"
+		{
+			MENUITEM "DMX Setup", 10543
+				MENUITEM "MIDI to DMX", 10554
+				MENUITEM "Load a fixture", 10557
+		}
+		POPUP "OSC"
+		{
+			MENUITEM "Behringer Open Sound Control...", 10661
+		}
+		MENUITEM SEPARATOR
+			MENUITEM "3D mouse setup...", 10143
+			MENUITEM "Scan VSTs...", 11506
+			MENUITEM "VST performance\tShift+F4", 17117
+			MENUITEM "VST and plugins explorer\tF4", 17115
+	}
+	POPUP "Tools"
+	{
+		MENUITEM "Musical Artifacts Browser", 11738
+			MENUITEM "Thingiverse Browser", 11742
+			MENUITEM "Ear training...",10598
+		MENUITEM "Capture Screen", 11594
+		MENUITEM "SoundFont Creator", 11949
+		MENUITEM SEPARATOR
+		MENUITEM "Debugging tools", 11445
+		MENUITEM SEPARATOR
+		MENUITEM "Check for updates...",998
+	}
+	POPUP "Help"
+	{
+		MENUITEM "Manual\tF1",13111
+		MENUITEM "Web site",13110
+		MENUITEM SEPARATOR
+		MENUITEM "Example Projects",13114
+		MENUITEM "Video demos",13115
+		MENUITEM SEPARATOR
+		MENUITEM "Request instant support",11411
+		MENUITEM "Request remote debugging",11412
+		MENUITEM SEPARATOR
+		MENUITEM "Bug/Feature tracking", 13118
+		MENUITEM "Submit feedback",13116
+		MENUITEM "Business Contact",13113
+		MENUITEM SEPARATOR
+		MENUITEM "About...",999
+	}
+
+}
+
+MENU_MAIN_A_SIMPLE MENU
+{
+	POPUP "&File"
+	{
+		MENUITEM "New Project\tCtrl+N",101
+		MENUITEM "Open Project...\tCtrl+O",102
+		MENUITEM SEPARATOR
+		MENUITEM "Save Project\tCtrl+S",103
+		MENUITEM "Save as...",106
+		MENUITEM SEPARATOR
+		MENUITEM "Languages...",995
+		MENUITEM "My license...",997
+		MENUITEM SEPARATOR
+		MENUITEM "Exit",996
+	}
+	POPUP "Edit"
+	{
+		MENUITEM "Undo\tCtrl+Z",18572
+		MENUITEM "Redo\tCtrl+Y",18573
+		MENUITEM SEPARATOR
+		MENUITEM "Set position...\tCtrl+G",18555
+		MENUITEM "Set view...\tCtrl+Shift+G",18556
+		MENUITEM "Set selection...\tCtrl+Alt+G",18557
+		MENUITEM SEPARATOR
+		POPUP "Preferences"
+		{
+			MENUITEM "Options\tF11",105
+			MENUITEM "Keyboard shortcuts...\tCtrl+Alt+K",108
+			MENUITEM "Colors...\tShift+Alt+F11",18887
+		}
+	}
+	POPUP "View"
+	{
+/*		POPUP "Toolbar and menu"
+		{
+			MENUITEM "Plain menu",18776
+			MENUITEM "Ribbon toolbar (minimized)",18777
+			MENUITEM "Ribbon toolbar (full)",18778
+		}
+		MENUITEM SEPARATOR
+*/
+		MENUITEM "Media Bay\tAlt+B",18553
+		MENUITEM "Effects\tAlt+E",18571
+		MENUITEM "Quick Mixer\tAlt+X",18575
+		MENUITEM SEPARATOR
+		MENUITEM "~718\tAlt+1",17701
+		MENUITEM "~681\tAlt+2",17702
+		MENUITEM "~683\tAlt+3",17703
+		MENUITEM "~313\tAlt+4",17704
+		MENUITEM "~727\tAlt+5",17705
+		MENUITEM SEPARATOR
+		MENUITEM "~753\tAlt+6",17706
+		MENUITEM "~754\tAlt+7",17707
+		MENUITEM "~739\tAlt+8",17708
+		MENUITEM "~740\tAlt+9",17709
+		MENUITEM "~741\tAlt+0",17710
+		MENUITEM SEPARATOR
+		POPUP "Workspace"
+		{
+			MENUITEM "Video editor (Advanced)",11602
+			MENUITEM "Video editor (Simple)",11692
+			MENUITEM SEPARATOR
+			MENUITEM "Audio editor (Advanced)",11601
+			MENUITEM "Audio editor (Simple)",11681
+		}
+	}
+	POPUP "Track"
+	{
+		MENUITEM "Add one\tCtrl+T",11771
+		MENUITEM "Add many...",11772
+	}
+	POPUP "Insert"
+	{
+		MENUITEM "Any item...\tCtrl+I",11500
+		MENUITEM SEPARATOR
+		MENUITEM "Video or Audio...",11541
+		MENUITEM SEPARATOR
+		MENUITEM "Folder...\tCtrl+Shift+I",11549
+	}
+	POPUP "AI"
+	{
+		MENUITEM "Audio Demux",12901
+		MENUITEM "Audio Karaoke",12902
+			MENUITEM "Audio Speech To Text", 12903
+	}
+	POPUP "Export"
+	{
+		MENUITEM "Audio file...\tShift+F5",11509
+		MENUITEM "Export Audio to CD",11515
+		MENUITEM "MIDI", 11518
+	}
+	POPUP "Audio"
+	{
+		MENUITEM "Mixer...\tF3",10513
+		MENUITEM "Flow Control...\tF9",10900
+		MENUITEM "Rythm",10506
+		MENUITEM "VSTs\tF4", 17115
+		MENUITEM "Orchestra\tF7",10400
+	}
+
+			POPUP "Studio Setup"
+		{
+			POPUP "ASIO driver"
+			{
+				MENUITEM "Control panel",10503
+				MENUITEM "Details...",10504
+				MENUITEM "Change sample rate...",10511
+				MENUITEM "Change buffer size...",10512
+				MENUITEM "Switch clock",10518
+				MENUITEM SEPARATOR
+				MENUITEM "Choose another driver",10505
+			}
+			POPUP "Audio Setup"
+			{
+				MENUITEM "Pan setup",10990
+				MENUITEM "Metronome channels",10560
+			}
+			POPUP "Audio Mode"
+			{
+				MENUITEM "Normal",10522
+				MENUITEM "Mono",10523
+			}
+			POPUP "MIDI"
+			{
+				MENUITEM "MIDI Devices..",10553
+				MENUITEM "Current MIDI maps...",12002
+				MENUITEM "MIDI map explorer...",12001
+				MENUITEM "Toggle learning mode",12003
+				MENUITEM "Record beat loop from MIDI device",12005
+			}
+			MENUITEM SEPARATOR
+			MENUITEM "Scan VSTs...",11506
+			MENUITEM "VST and plugins explorer\tF4", 17115
+		}
+
+
+	POPUP "Tools"
+	{
+		MENUITEM "VST and plugins explorer\tF4", 17115
+		MENUITEM "Check for updates...",998
+	}
+	POPUP "Help"
+	{
+		MENUITEM "Manual\tF1",13111
+		MENUITEM "Web site",13110
+		MENUITEM SEPARATOR
+		MENUITEM "Example Projects",13114
+		MENUITEM "Video demos",13115
+		MENUITEM SEPARATOR
+		MENUITEM "Bug/Feature tracking",13118
+			MENUITEM "Submit feedback",13116
+		MENUITEM "Business Contact",13113
+		MENUITEM SEPARATOR
+		MENUITEM "About...",999
+	}
+
+}
