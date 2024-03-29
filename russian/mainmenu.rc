@@ -3,44 +3,44 @@
 
 MENU_MAIN_V_COMPLEX MENU
 {
-	POPUP "&File"
+	POPUP "&Файл"
 	{
-		MENUITEM "New Project...\tCtrl+N",101
-		MENUITEM "Open Project...\tCtrl+O",102
+		MENUITEM "Новый Проект...\tCtrl+N",101
+		MENUITEM "Открыть Проект...\tCtrl+O",102
 		MENUITEM SEPARATOR
-		MENUITEM "Save Project\tCtrl+S",103
-		MENUITEM "Save as...",106
+		MENUITEM "Сохранить Проект...\tCtrl+S",103
+		MENUITEM "Сохранить как...",106
 		MENUITEM SEPARATOR
-		MENUITEM "Rename Project...",107
-		MENUITEM "Cleanup Project...",104
+		MENUITEM "Переименовать Проект...",107
+		MENUITEM "Очистить Проект...",104
 		MENUITEM SEPARATOR
-		MENUITEM "My license...",997
+		MENUITEM "Моя лицензия...",997
 		MENUITEM SEPARATOR
-		MENUITEM "Languages...",995
-		MENUITEM "Home",990
+		MENUITEM "Языки...",995
+		MENUITEM "Домой",990
 		MENUITEM SEPARATOR
-		MENUITEM "Exit",996
+		MENUITEM "Выход",996
 	}
-	POPUP "Edit"
+	POPUP "Правки"
 	{
-		MENUITEM "Undo\tCtrl+Z",18572
-		MENUITEM "Redo\tCtrl+Y",18573
+		MENUITEM "Отмена\tCtrl+Z",18572
+		MENUITEM "Вернуть\tCtrl+Y",18573
 		MENUITEM SEPARATOR
-		MENUITEM "Set position...\tCtrl+G",18555
-		MENUITEM "Set view...\tCtrl+Shift+G",18556
-		MENUITEM "Set selection...\tCtrl+Alt+G",18557
+		MENUITEM "Установить позицию...\tCtrl+G",18555
+		MENUITEM "Установить вид...\tCtrl+Shift+G",18556
+		MENUITEM "Установить выборку...\tCtrl+Alt+G",18557
 		MENUITEM SEPARATOR
 		MENUITEM "Part filtering...\tCtrl+F",18535
 		MENUITEM SEPARATOR
-		POPUP "Preferences"
+		POPUP "Предпочтения"
 		{
-			MENUITEM "Options\tF11", 105
-				MENUITEM "Keyboard shortcuts...\tCtrl+Alt+K", 108
-				MENUITEM "Colors...\tShift+Alt+F11", 18887
+			MENUITEM "Опции\tF11", 105
+				MENUITEM "Комбинации клавиш...\tCtrl+Alt+K", 108
+				MENUITEM "Цвета...\tShift+Alt+F11", 18887
 		}
 
 	}
-	POPUP "View"
+	POPUP "Вид"
 	{
 /*		POPUP "Toolbar and menu"
 		{
@@ -51,7 +51,7 @@ MENU_MAIN_V_COMPLEX MENU
 		MENUITEM SEPARATOR
 */
 		MENUITEM "Media Bay\tAlt+B",18553
-		MENUITEM "Effects\tAlt+E",18571
+		MENUITEM "Эффекты\tAlt+E",18571
 		MENUITEM "Quick Mixer\tAlt+X",18575
 		MENUITEM SEPARATOR
 		MENUITEM "~718\tAlt+1",17701
@@ -65,13 +65,13 @@ MENU_MAIN_V_COMPLEX MENU
 		MENUITEM "~639\tAlt+8",17708
 		MENUITEM "~747\tAlt+9",17709
 		MENUITEM SEPARATOR
-		POPUP "Workspace"
+		POPUP "Рабочее пространство"
 		{
-			MENUITEM "Video editor (Advanced)",11602
-			MENUITEM "Video editor (Simple)",11692
+			MENUITEM "Видеоредактор (продвинутый)",11602
+			MENUITEM "Видеоредактор (простой)",11692
 			MENUITEM SEPARATOR
-			MENUITEM "Audio editor (Advanced)",11601
-			MENUITEM "Audio editor (Simple)",11681
+			MENUITEM "Аудиоредактор (продвинутый)",11601
+			MENUITEM "Аудиоредактор (простой)",11681
 		}
 	}
 /*	POPUP "Scene"
@@ -99,23 +99,23 @@ MENU_MAIN_V_COMPLEX MENU
 		MENUITEM "Current scene options\tShift+F11",18889
 	}*/
 
-	POPUP "Layer"
+	POPUP "Слой"
 	{
-		MENUITEM "Add one\tCtrl+L",11771
-		MENUITEM "Add many...",11772
+		MENUITEM "Добавить один\tCtrl+L",11771
+		MENUITEM "Добавить много...",11772
 		MENUITEM "Add a video wall...",11773
 	}
-	POPUP "Insert"
+	POPUP "Вставка"
 	{
-		MENUITEM "Any item...\tCtrl+I",11500
+		MENUITEM "Любой элемент...\tCtrl+I",11500
 		MENUITEM SEPARATOR
-		MENUITEM "Video or Audio...",11541
-		MENUITEM "Images...",11543
-		MENUITEM "Text\tT",11743
+		MENUITEM "Видео или Аудио...",11541
+		MENUITEM "Изображения...",11543
+		MENUITEM "Текст\tT",11743
 		MENUITEM SEPARATOR
-		MENUITEM "Folder...\tCtrl+Shift+I",11549
+		MENUITEM "Папку...\tCtrl+Shift+I",11549
 		MENUITEM SEPARATOR
-		POPUP "Animated text"
+		POPUP "Анимированный текст"
 		{
 			MENUITEM "Scrolling",11781
 			MENUITEM "Typing",11782
@@ -131,7 +131,7 @@ MENU_MAIN_V_COMPLEX MENU
 			MENUITEM "Milkdrop",11510
 			MENUITEM "HLSL",11710
 		}
-		POPUP "Drawing Tools"
+		POPUP "Инструменты рисования"
 		{
 			MENUITEM "Primitive Animation",11731
 			MENUITEM "Old mode Animation",11744
@@ -357,7 +357,7 @@ MENU_MAIN_V_COMPLEX MENU
 		MENUITEM "Manual\tF1",13111
 		MENUITEM "Web site",13110
 		MENUITEM SEPARATOR
-		MENUITEM "Example Projects",13114
+		MENUITEM "Example Проект...13114
 		MENUITEM "Video demos",13115
 		MENUITEM SEPARATOR
 		MENUITEM "Request instant support",11411
@@ -375,10 +375,10 @@ MENU_MAIN_V_SIMPLE MENU
 {
 	POPUP "&File"
 	{
-		MENUITEM "New Project\tCtrl+N",101
-		MENUITEM "Open Project...\tCtrl+O",102
+		MENUITEM "New Проект...trl+N",101
+		MENUITEM "Open Проект...\tCtrl+O",102
 		MENUITEM SEPARATOR
-		MENUITEM "Save Project\tCtrl+S",103
+		MENUITEM "Save Проект...trl+S",103
 		MENUITEM "Save as...",106
 		MENUITEM SEPARATOR
 		MENUITEM "Languages...",995
@@ -391,9 +391,9 @@ MENU_MAIN_V_SIMPLE MENU
 		MENUITEM "Undo\tCtrl+Z",18572
 		MENUITEM "Redo\tCtrl+Y",18573
 		MENUITEM SEPARATOR
-		MENUITEM "Set position...\tCtrl+G",18555
-		MENUITEM "Set view...\tCtrl+Shift+G",18556
-		MENUITEM "Set selection...\tCtrl+Alt+G",18557
+		MENUITEM "Установить position...\tCtrl+G",18555
+		MENUITEM "Установить view...\tCtrl+Shift+G",18556
+		MENUITEM "Установить selection...\tCtrl+Alt+G",18557
 		MENUITEM SEPARATOR
 		POPUP "Preferences"
 		{
@@ -516,7 +516,7 @@ MENU_MAIN_V_SIMPLE MENU
 		MENUITEM "Manual\tF1",13111
 		MENUITEM "Web site",13110
 		MENUITEM SEPARATOR
-		MENUITEM "Example Projects",13114
+		MENUITEM "Example Проект...13114
 		MENUITEM "Video demos",13115
 		MENUITEM SEPARATOR
 		MENUITEM "Bug/Feature tracking",13118
@@ -534,14 +534,14 @@ MENU_MAIN_A_COMPLEX MENU
 {
 	POPUP "&File"
 	{
-		MENUITEM "New Project...\tCtrl+N",101
-		MENUITEM "Open Project...\tCtrl+O",102
+		MENUITEM "New Проект...\tCtrl+N",101
+		MENUITEM "Open Проект...\tCtrl+O",102
 		MENUITEM SEPARATOR
-		MENUITEM "Save Project\tCtrl+S",103
+		MENUITEM "Save Проект...trl+S",103
 		MENUITEM "Save as...",106
 		MENUITEM SEPARATOR
-		MENUITEM "Rename Project...",107
-		MENUITEM "Cleanup Project...",104
+		MENUITEM "Rename Проект...",107
+		MENUITEM "Cleanup Проект...",104
 		MENUITEM SEPARATOR
 		MENUITEM "My license...",997
 		MENUITEM SEPARATOR
@@ -555,9 +555,9 @@ MENU_MAIN_A_COMPLEX MENU
 		MENUITEM "Undo\tCtrl+Z",18572
 		MENUITEM "Redo\tCtrl+Y",18573
 		MENUITEM SEPARATOR
-		MENUITEM "Set position...\tCtrl+G",18555
-		MENUITEM "Set view...\tCtrl+Shift+G",18556
-		MENUITEM "Set selection...\tCtrl+Alt+G",18557
+		MENUITEM "Установить position...\tCtrl+G",18555
+		MENUITEM "Установить view...\tCtrl+Shift+G",18556
+		MENUITEM "Установить selection...\tCtrl+Alt+G",18557
 		MENUITEM SEPARATOR
 		MENUITEM "Part filtering...\tCtrl+F",18535
 		MENUITEM SEPARATOR
@@ -776,7 +776,7 @@ MENU_MAIN_A_COMPLEX MENU
 		MENUITEM "Manual\tF1",13111
 		MENUITEM "Web site",13110
 		MENUITEM SEPARATOR
-		MENUITEM "Example Projects",13114
+		MENUITEM "Example Проект...13114
 		MENUITEM "Video demos",13115
 		MENUITEM SEPARATOR
 		MENUITEM "Request instant support",11411
@@ -795,10 +795,10 @@ MENU_MAIN_A_SIMPLE MENU
 {
 	POPUP "&File"
 	{
-		MENUITEM "New Project\tCtrl+N",101
-		MENUITEM "Open Project...\tCtrl+O",102
+		MENUITEM "New Проект...trl+N",101
+		MENUITEM "Open Проект...\tCtrl+O",102
 		MENUITEM SEPARATOR
-		MENUITEM "Save Project\tCtrl+S",103
+		MENUITEM "Save Проект...trl+S",103
 		MENUITEM "Save as...",106
 		MENUITEM SEPARATOR
 		MENUITEM "Languages...",995
@@ -811,9 +811,9 @@ MENU_MAIN_A_SIMPLE MENU
 		MENUITEM "Undo\tCtrl+Z",18572
 		MENUITEM "Redo\tCtrl+Y",18573
 		MENUITEM SEPARATOR
-		MENUITEM "Set position...\tCtrl+G",18555
-		MENUITEM "Set view...\tCtrl+Shift+G",18556
-		MENUITEM "Set selection...\tCtrl+Alt+G",18557
+		MENUITEM "Установить position...\tCtrl+G",18555
+		MENUITEM "Установить view...\tCtrl+Shift+G",18556
+		MENUITEM "Установить selection...\tCtrl+Alt+G",18557
 		MENUITEM SEPARATOR
 		POPUP "Preferences"
 		{
@@ -937,7 +937,7 @@ MENU_MAIN_A_SIMPLE MENU
 		MENUITEM "Manual\tF1",13111
 		MENUITEM "Web site",13110
 		MENUITEM SEPARATOR
-		MENUITEM "Example Projects",13114
+		MENUITEM "Example Проект...13114
 		MENUITEM "Video demos",13115
 		MENUITEM SEPARATOR
 		MENUITEM "Bug/Feature tracking",13118
