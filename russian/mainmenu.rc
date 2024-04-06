@@ -357,7 +357,7 @@ MENU_MAIN_V_COMPLEX MENU
 		MENUITEM "Manual\tF1",13111
 		MENUITEM "Web site",13110
 		MENUITEM SEPARATOR
-		MENUITEM "Example Проект...13114
+		MENUITEM "Example Проект...",13114
 		MENUITEM "Video demos",13115
 		MENUITEM SEPARATOR
 		MENUITEM "Request instant support",11411
