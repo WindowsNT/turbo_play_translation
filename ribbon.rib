@@ -153,6 +153,7 @@
 		<Command Name="d26397" Id="26397" LabelTitle="FADE LEFT -10ms" />
 		<Command Name="d26399" Id="26399" LabelTitle="FADE LEFT +10ms" />
 		<Command Name="d26401" Id="26401" LabelTitle="FADE LEFT OFF" />
+		<Command Name="d26491" Id="26491" LabelTitle="MEDIAINFO" />
 
 
 		<!-- With Shift 26600 - 26999 -->
