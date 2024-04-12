@@ -323,6 +323,7 @@
 		<Command Name="d36683" Id="36683" LabelTitle="SAVE PART" />
 		<Command Name="d36688" Id="36688" LabelTitle="EXTEND TO TRANSITION" />
 		<Command Name="d36670" Id="36670" LabelTitle="ADD FADE" />
+		<Command Name="d36672" Id="36672" LabelTitle="HDR" />
 		<Command Name="d36665" Id="36665" LabelTitle="VOLUME AUTOMATION" />
 		<Command Name="d36679" Id="36679" LabelTitle="OPACITY AUTOMATION" />
 		<Command Name="d36673" Id="36673" LabelTitle="IMPORT FROM PHONE" />

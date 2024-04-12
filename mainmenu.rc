@@ -248,7 +248,7 @@ MENU_MAIN_V_COMPLEX MENU
 	}
 	POPUP "Library"
 	{
-		MENUITEM "VST and plugins explorer\tF4", 17115
+		MENUITEM "VST and plugins explorer\tF4", 17115	
 		MENUITEM "Style Player", 11610
 		MENUITEM SEPARATOR
 		MENUITEM "Preview effects", 10600
