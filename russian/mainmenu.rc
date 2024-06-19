@@ -191,6 +191,9 @@ MENU_MAIN_V_COMPLEX MENU
 			MENUITEM "Image Content-Aware Brush", 17881
 			MENUITEM "Image Segments", 12913
 			MENUITEM "Image Auto Face Blur",12914
+			MENUITEM "Image Face Enhancer", 17884
+			MENUITEM "Image Image Enhancer", 17885
+			MENUITEM "Image Image Colorizer", 17886
 			MENUITEM SEPARATOR
 			MENUITEM "Video Stabilizer", 12922
 			MENUITEM "Video Scene Detector",12921
@@ -473,6 +476,9 @@ MENU_MAIN_V_SIMPLE MENU
 		MENUITEM "Image Content-Aware Brush",17881
 			MENUITEM "Image Segments",12913
 			MENUITEM "Image Auto Face Blur",12914
+			MENUITEM "Image Face Enhancer", 17884
+			MENUITEM "Image Image Enhancer", 17885
+			MENUITEM "Image Image Colorizer",17886
 			MENUITEM SEPARATOR
 			MENUITEM "Video Stabilizer", 12922
 			MENUITEM "Video Scene Detector",12921

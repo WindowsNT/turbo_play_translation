@@ -181,21 +181,24 @@ MENU_MAIN_V_COMPLEX MENU
 	POPUP "AI"
 	{
 		MENUITEM "Audio Demux", 12901
-			MENUITEM "Audio Karaoke", 12902
-			MENUITEM "Audio Speech To Text", 12903
-			MENUITEM "Audio Voice Fix", 12904
+		MENUITEM "Audio Karaoke", 12902
+		MENUITEM "Audio Speech To Text", 12903
+		MENUITEM "Audio Voice Fix", 12904
 		MENUITEM SEPARATOR
 		MENUITEM "Image Colorization", 12911
 		MENUITEM "Image BG Remover", 12912
-			MENUITEM "Image Content-Aware Brush", 17881
-			MENUITEM "Image Segments", 12913
-			MENUITEM "Image Auto Face Blur",12914
-			MENUITEM SEPARATOR
-			MENUITEM "Video Stabilizer", 12922
-			MENUITEM "Video Scene Detector",12921
-			MENUITEM SEPARATOR
-			MENUITEM "Text Auto Pos/Color",12931
-			MENUITEM "Text To Music", 13834
+		MENUITEM "Image Content-Aware Brush", 17881
+		MENUITEM "Image Segments", 12913
+			MENUITEM "Image Auto Face Blur", 12914
+			MENUITEM "Image Face Enhancer", 17884
+			MENUITEM "Image Image Enhancer", 17885
+			MENUITEM "Image Image Colorizer",17886
+		MENUITEM SEPARATOR
+		MENUITEM "Video Stabilizer", 12922
+		MENUITEM "Video Scene Detector",12921
+		MENUITEM SEPARATOR
+		MENUITEM "Text Auto Pos/Color",12931
+		MENUITEM "Text To Music", 13834
 	}
 	POPUP "Export"
 	{
@@ -466,12 +469,16 @@ MENU_MAIN_V_SIMPLE MENU
 		MENUITEM "Audio Demux",12901
 		MENUITEM "Audio Karaoke",12902
 			MENUITEM "Audio Speech To Text", 12903
+		MENUITEM "Audio Voice Fix", 12904
 		MENUITEM SEPARATOR
 		MENUITEM "Image Colorization", 12911
 		MENUITEM "Image BG Remover", 12912
 		MENUITEM "Image Content-Aware Brush",17881
 			MENUITEM "Image Segments",12913
 			MENUITEM "Image Auto Face Blur",12914
+			MENUITEM "Image Face Enhancer", 17884
+			MENUITEM "Image Image Enhancer", 17885
+			MENUITEM "Image Image Colorizer", 17886
 			MENUITEM SEPARATOR
 			MENUITEM "Video Stabilizer", 12922
 			MENUITEM "Video Scene Detector",12921
@@ -663,6 +670,7 @@ MENU_MAIN_A_COMPLEX MENU
 		MENUITEM "Audio Demux", 12901
 		MENUITEM "Audio Karaoke", 12902
 			MENUITEM "Audio Speech To Text", 12903
+			MENUITEM "Audio Voice Fix", 12904
 	}
 	POPUP "Export"
 	{
@@ -880,6 +888,7 @@ MENU_MAIN_A_SIMPLE MENU
 		MENUITEM "Audio Demux",12901
 		MENUITEM "Audio Karaoke",12902
 			MENUITEM "Audio Speech To Text", 12903
+		MENUITEM "Audio Voice Fix", 12904
 	}
 	POPUP "Export"
 	{

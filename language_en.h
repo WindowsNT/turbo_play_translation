@@ -3347,7 +3347,7 @@ L"Default\tS",
 L"Force Note Off\tS",
 L"Force Keep On\tS",
 L"Volume\t+/-",
-L"Flam Positions\t(F,Shift+F)",
+L"Flam Split\t(F,Shift+F)",
 L"Pianoroll range...\tP",
 L"DMX Channel...",
 L"VST 3.5 expressions",
@@ -5721,6 +5721,8 @@ L"Stream",
 L"Face Enhancer",
 L"Image Enhancer",
 L"Image Colorizer",
+L"HuggingFace",
+L"Model operation failed",
 };
 
-#define MAX_LANG 5723
+#define MAX_LANG 5725
