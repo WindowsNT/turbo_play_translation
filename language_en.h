@@ -5723,6 +5723,7 @@ L"Image Enhancer",
 L"Image Colorizer",
 L"HuggingFace",
 L"Model operation failed",
+L"Assistant",
 };
 
-#define MAX_LANG 5725
+#define MAX_LANG 5726
