@@ -363,6 +363,17 @@
 		<Command Name="d46521" Id="46521" LabelTitle="PRECISE PAN RIGHT" />
 		<Command Name="d46691" Id="46691" LabelTitle="RELEASE BYPASSES" />
 
+		<Command Name="d46049" Id="46049" LabelTitle="AI" />
+		<Command Name="d46050" Id="46050" LabelTitle="AI" />
+		<Command Name="d46051" Id="46051" LabelTitle="AI" />
+		<Command Name="d46052" Id="46052" LabelTitle="AI" />
+		<Command Name="d46053" Id="46053" LabelTitle="AI" />
+		<Command Name="d46054" Id="46054" LabelTitle="AI" />
+		<Command Name="d46055" Id="46055" LabelTitle="AI" />
+		<Command Name="d46056" Id="46056" LabelTitle="AI" />
+		<Command Name="d46057" Id="46057" LabelTitle="AI" />
+		<Command Name="d46058" Id="46058" LabelTitle="AI" />
+
 		<!-- With CAS 46300 - 46599 -->
 
 
