@@ -293,6 +293,18 @@
 		<Command Name="d36491" Id="36491" LabelTitle="TOGGLE BYPASS TRANSITONS" />
 
 
+		<Command Name="d36449" Id="36449" LabelTitle="AI" />
+		<Command Name="d36450" Id="36450" LabelTitle="AI" />
+		<Command Name="d36451" Id="36451" LabelTitle="AI" />
+		<Command Name="d36452" Id="36452" LabelTitle="AI" />
+		<Command Name="d36453" Id="36453" LabelTitle="AI" />
+		<Command Name="d36454" Id="36454" LabelTitle="AI" />
+		<Command Name="d36455" Id="36455" LabelTitle="AI" />
+		<Command Name="d36456" Id="36456" LabelTitle="AI" />
+		<Command Name="d36457" Id="36457" LabelTitle="AI" />
+		<Command Name="d36458" Id="36458" LabelTitle="AI" />
+
+		<Command Name="d26449" Id="26449" LabelTitle="APPLY EFFECTS" />
 		<Command Name="d26349" Id="26349" LabelTitle="MARKER 1" />
 		<Command Name="d26350" Id="26350" LabelTitle="MARKER 2" />
 		<Command Name="d26351" Id="26351" LabelTitle="MARKER 3" />
@@ -332,7 +344,7 @@
 		<Command Name="d36691" Id="36691" LabelTitle="TOGGLE BYPASS MIDI EFFECTS" />
 
 		<!-- With AS 46000 - 46299 -->
-	<Command Name="d46067" Id="46067" LabelTitle="TOGGLE MULTICUT" />
+	<Command Name="d46067" Id="46067" LabelTitle="AI SEGMENTATION" />
 		<Command Name="d46073" Id="46073" LabelTitle="TOGGLE INLINE CURVE" />
 		<Command Name="d46072" Id="46072" LabelTitle="AUDIO LIP SYNC" />
 		<Command Name="d46081" Id="46081" LabelTitle="AI SEGMENTS" />
