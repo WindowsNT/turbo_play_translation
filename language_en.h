@@ -1337,8 +1337,8 @@ L"Move right 0.001s\tCtrl+Alt+'",
 L"Attach to left\t[",
 L"Attach to right\t]",
 L"Position",
-L"Enlarge\t/",
-L"Reduce\t\\",
+L"Enlarge",
+L"Reduce",
 L"Extend left\tCtrl+[",
 L"Extend right\tCtrl+]",
 L"Extend left+right\tCtrl+[,Ctlr+]",
@@ -5731,6 +5731,9 @@ L"Voice Swapping",
 L"Models...",
 L"Text to Video",
 L"Image to Video",
+L"Caption",
+L"Freeze position",
+
 };
 
-#define MAX_LANG 5733
+#define MAX_LANG 5735
