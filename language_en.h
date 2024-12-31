@@ -5733,7 +5733,9 @@ L"Text to Video",
 L"Image to Video",
 L"Caption",
 L"Freeze position",
+L"Transforming Track",
+L"How to put multiple transitions?",
 
 };
 
-#define MAX_LANG 5735
+#define MAX_LANG 5737

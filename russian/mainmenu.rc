@@ -106,6 +106,7 @@ MENU_MAIN_V_COMPLEX MENU
 		MENUITEM "Добавить один\tCtrl+L",11771
 		MENUITEM "Добавить много...",11772
 		MENUITEM "Add a video wall...",11773
+			MENUITEM "Full ASIO...", 11774
 	}
 	POPUP "Вставка"
 	{
@@ -643,6 +644,7 @@ MENU_MAIN_A_COMPLEX MENU
 	{
 		MENUITEM "Add one\tCtrl+T",11771
 		MENUITEM "Add many...",11772
+			MENUITEM "Full ASIO...", 11774
 	}
 	POPUP "Insert"
 	{
