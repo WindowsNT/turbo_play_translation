@@ -4714,7 +4714,7 @@ L"NVidia HDR MFT\r\nIf you have a NVidia-capable HDR chipset, you canthe HDR enc
 L"If the registration succeeded, try the video encoding once more now.",
 L"Thank you for licensing Turbo Play.",
 L"Rendering audio...",
-L"Rendering Audio\r\n",
+L"Rendering video...",
 L"The screen settings and/or DPI has changed, rendering may be inaccurate. Continue?",
 L";FFMETADATA1\r\n", //NT
 L"artist=Turbo Play\r\n", //NT 

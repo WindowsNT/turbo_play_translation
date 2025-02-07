@@ -374,6 +374,8 @@
 		<Command Name="d46519" Id="46519" LabelTitle="PRECISE PAN LEFT" />
 		<Command Name="d46521" Id="46521" LabelTitle="PRECISE PAN RIGHT" />
 		<Command Name="d46691" Id="46691" LabelTitle="RELEASE BYPASSES" />
+		<Command Name="d46186" Id="46186" LabelTitle="VIDEO SHIFT LEFT" />
+		<Command Name="d46122" Id="46122" LabelTitle="VIDEO SHIFT RIGHT" />
 
 		<Command Name="d46049" Id="46049" LabelTitle="AI" />
 		<Command Name="d46050" Id="46050" LabelTitle="AI" />
